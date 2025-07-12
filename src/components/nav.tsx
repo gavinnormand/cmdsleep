@@ -7,9 +7,9 @@ function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="sticky top-0 z-50 bg-white">
       {/* Desktop nav bar */}
-      <div className="sticky top-0 hidden items-center justify-between bg-white px-8 py-4 lg:flex">
+      <div className="hidden items-center justify-between px-8 py-4 lg:flex">
         <Link to="/">
           <img src="/cmdsleepLogo.png" className="h-12"></img>
         </Link>
@@ -39,7 +39,7 @@ function Nav() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="bg-menus dark:bg-menus-dark grid grid-cols-2 justify-between px-6 py-6 lg:hidden">
+      <div className="grid grid-cols-2 justify-between px-6 py-6 lg:hidden">
         <button
           className="text-icon hover:text-icon-hover"
           aria-label="Toggle menu"

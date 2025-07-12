@@ -13,18 +13,22 @@ import Footer from "./components/footer";
 function App() {
   return (
     <Router>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sleep-doctors" element={<SleepDoctors />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/sleep-disorders" element={<SleepDisorders />} />
-        <Route path="/patient-portal" element={<PatientPortal />} />
-        <Route path="/forms" element={<Forms />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/directions" element={<Directions />} />
-      </Routes>
-      <Footer />
+      <div className="flex min-h-screen flex-col">
+        <Nav />
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sleep-doctors" element={<SleepDoctors />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/sleep-disorders" element={<SleepDisorders />} />
+            <Route path="/patient-portal" element={<PatientPortal />} />
+            <Route path="/forms" element={<Forms />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/directions" element={<Directions />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }

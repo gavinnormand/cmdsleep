@@ -15,35 +15,43 @@ function Contact() {
             Need to request an appointment or have a question?{" "}
           </p>
           <p>
-            <FaPenToSquare className="inline mr-1" /> Click
+            <FaPenToSquare className="mr-2 mb-1 inline" />
+            Click
             <a
               href="https://patientportal.advancedmd.com/160926/onlineintake/"
-              className="text-blue-900 hover:underline mx-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-1 text-blue-800 hover:underline active:text-blue-950 active:underline"
             >
               here
             </a>
             to complete our online patient intake form
           </p>
-          <p className="flex flex-row items-center gap-x-1">
-            <FaPhoneAlt className="mr-1" /> Call our office at
+          <p>
+            <FaPhoneAlt className="mr-2 mb-1 inline" />
+            Call our office at
             <a
               href="tel:+16094901444"
-              className="text-blue-900 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-1 text-blue-800 hover:underline active:text-blue-950 active:underline"
             >
               609-490-1444
             </a>
           </p>
-          <p className="flex flex-row items-center gap-x-1">
-            <FaEnvelope className="mr-1" />
+          <p>
+            <FaEnvelope className="mr-2 mb-1 inline" />
             Email us at
             <a
               href="mailto:cmdsleep@live.com"
-              className="text-blue-900 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-1 text-blue-800 hover:underline active:text-blue-950 active:underline"
             >
               cmdsleep@live.com
             </a>
           </p>
-          <p>
+          <p className="w-11/12">
             You can also fill out the email contact form to send us a message
             directly from this site.
           </p>
