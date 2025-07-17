@@ -1,11 +1,9 @@
+import PageTitle from "../components/pageTitle";
+
 function PatientPortal() {
   return (
     <div>
-      <div className="flex h-16 w-full items-center bg-sky-100 py-24 text-center">
-        <h1 className="mx-auto text-6xl font-bold text-blue-900">
-          Patient Portal
-        </h1>
-      </div>
+      <PageTitle text={"Patient Portal"} />
       <div className="py-8 text-center">
         <p className="mx-8 text-xl font-semibold">
           The Patient Portal provides an easy and secure way for our patients to

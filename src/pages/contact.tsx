@@ -1,13 +1,12 @@
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaPrint } from "react-icons/fa";
 import ContactForm from "../components/contactForm";
 import { FaPenToSquare } from "react-icons/fa6";
+import PageTitle from "../components/pageTitle";
 
 function Contact() {
   return (
     <div>
-      <div className="flex h-16 w-full items-center bg-sky-100 py-24 text-center">
-        <h1 className="mx-auto text-6xl font-bold text-blue-900">Contact Us</h1>
-      </div>
+      <PageTitle text={"Contact Us"} />
       <div className="grid grid-cols-1 gap-4 p-8 lg:grid-cols-2">
         <div className="flex flex-col gap-y-1.5 text-xl">
           <p className="text-2xl font-semibold">
@@ -36,7 +35,19 @@ function Contact() {
               rel="noopener noreferrer"
               className="mx-1 text-blue-800 hover:underline active:text-blue-950 active:underline"
             >
-              609-490-1444
+              (609) 490-1444
+            </a>
+          </p>
+          <p>
+            <FaPrint className="mr-2 mb-1 inline" />
+            Fax us documents at
+            <a
+              href="tel:+16094901133"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-1 text-blue-800 hover:underline active:text-blue-950 active:underline"
+            >
+              (609) 490-1133
             </a>
           </p>
           <p>
