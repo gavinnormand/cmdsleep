@@ -17,3 +17,7 @@
 
   --header-footer-size: 137px;
 }
+
+a {
+  cursor: pointer;
+}

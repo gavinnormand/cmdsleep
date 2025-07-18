@@ -7,7 +7,7 @@ function PatientPortal() {
       <div className="py-8 text-center">
         <p className="mx-8 text-xl font-semibold">
           The Patient Portal provides an easy and secure way for our patients to
-          stay informed and engaged with their care
+          stay informed and engaged with their care!
         </p>
         <div className="flex flex-row flex-wrap justify-center">
           <div className="m-8 w-[350px] justify-self-center rounded-xl border-2 border-blue-900 bg-sky-50 p-6 text-left shadow-lg">
