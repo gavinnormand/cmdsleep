@@ -25,17 +25,27 @@ function PatientPortal() {
             <p className="text-lg font-semibold text-blue-900">
               Existing Portal Users Click here to sign in!
             </p>
-            <button className="w-full cursor-pointer rounded-md border-2 border-blue-800 p-3 align-baseline font-semibold transition-all hover:bg-blue-800 hover:text-white">
+            <a
+              href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full rounded-md border-2 border-blue-800 p-3 text-center align-baseline font-semibold transition-all hover:bg-blue-800 hover:text-white"
+            >
               Existing Users
-            </button>
+            </a>
           </div>
           <div className="m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 border-blue-900 bg-sky-50 p-6 text-left shadow-lg">
             <p className="text-lg font-semibold text-blue-900">
               Don’t have a portal account? Click here to sign up?
             </p>
-            <button className="w-full cursor-pointer rounded-md border-2 border-blue-800 p-3 align-baseline font-semibold transition-all hover:bg-blue-800 hover:text-white">
+            <a
+              href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full rounded-md border-2 border-blue-800 p-3 text-center align-baseline font-semibold transition-all hover:bg-blue-800 hover:text-white"
+            >
               New Users
-            </button>
+            </a>
           </div>
         </div>
         <p className="m-8 text-lg">
