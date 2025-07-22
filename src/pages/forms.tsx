@@ -98,7 +98,7 @@ function Forms() {
   return (
     <div>
       <PageTitle text={"Forms"} />
-      <div className="flex flex-col items-center justify-center gap-y-4 p-4">
+      <div className="flex flex-col items-center justify-center gap-y-4 p-8">
         <FormSection
           title={"Home Sleep Test Forms"}
           forms={homeSleepTestForms}
