@@ -4,11 +4,17 @@ function Footer() {
       <p className="text-gray-500">
         &copy; 2025 Comprehensive Medical Diagnostics
       </p>
-      <div className="inline-flex gap-x-4 text-blue-800">
-        <a href="tel:+16084901444" className="hover:underline">
+      <div className="inline-flex gap-x-4 text-blue-600">
+        <a
+          href="tel:+16084901444"
+          className="hover:underline active:text-blue-800 active:underline"
+        >
           (609) 490-1444
         </a>
-        <a href="mailto:cmdsleep@live.com" className="hover:underline">
+        <a
+          href="mailto:cmdsleep@live.com"
+          className="hover:underline active:text-blue-800 active:underline"
+        >
           cmdsleep@live.com
         </a>
       </div>

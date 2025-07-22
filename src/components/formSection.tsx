@@ -11,14 +11,14 @@ interface FormSectionProps {
 const FormSection: React.FC<FormSectionProps> = ({ title, forms }) => {
   return (
     <div className="text-center">
-      <h1 className="p-4 text-4xl font-semibold">{title}</h1>
+      <h1 className="m-2 mx-auto w-fit border-b-2 p-2 text-4xl">{title}</h1>
       <div className="flex flex-col items-center gap-y-2">
         {forms.map((form: Form) => (
           <a
             href={form.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg text-blue-600 hover:underline"
+            className="text-lg text-blue-600 hover:underline active:text-blue-800 active:underline"
           >
             {form.name}
           </a>

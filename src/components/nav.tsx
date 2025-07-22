@@ -39,7 +39,7 @@ function Nav() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="grid grid-cols-2 justify-between px-6 py-6 lg:hidden">
+      <div className="grid grid-cols-[1fr_10fr_1fr] justify-between px-6 py-4 lg:hidden">
         <button
           className="text-icon hover:text-icon-hover"
           aria-label="Toggle menu"
@@ -51,6 +51,9 @@ function Nav() {
             <MenuIcon className="h-8 w-8" />
           )}
         </button>
+        <Link to="/" className="flex items-center justify-center">
+          <img src="/cmdsleepLogo.png" className="h-12"></img>
+        </Link>
       </div>
       <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </nav>

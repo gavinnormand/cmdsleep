@@ -27,7 +27,7 @@ function Directions() {
               Comprehensive&nbsp;Medical&nbsp;Diagnostics,&nbsp;LLC
             </p>
             <a
-              className="text-center text-blue-800 hover:underline"
+              className="text-center"
               href="https://maps.app.goo.gl/5Pwx8Ua2wbcUFGKp6"
               target="_blank"
               rel="noopener noreferrer"
