@@ -1,4 +1,4 @@
-import { Home, LinkIcon, List } from "lucide-react";
+import { LinkIcon, List } from "lucide-react";
 import { Link } from "react-router-dom";
 import PageTitle from "./pageTitle";
 
@@ -10,6 +10,7 @@ interface SleepDoctorPageProps {
   biography: string;
   boardCertifications: string[];
   moreInfoLink: string;
+  note?: string;
 }
 
 const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
@@ -20,6 +21,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
   biography,
   boardCertifications,
   moreInfoLink,
+  note,
 }) => {
   return (
     <div>
@@ -29,7 +31,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
           src={headshotLink}
           className="mx-auto mb-4 h-64 w-48 justify-center rounded-md object-cover"
         ></img>
-        <h1 className="mx-auto text-xl">
+        <h1 className="mx-auto text-center text-xl">
           {titles.map((title, index) => (
             <span>
               {titles.length - 1 == index ? title : title.concat(", ")}
@@ -48,6 +50,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
             </span>
           ))}
         </p>
+        {note && <div className="mt-4 text-lg italic">{"*".concat(note)}</div>}
         <div className="mt-8 flex flex-row flex-wrap justify-center gap-x-12 gap-y-8">
           <a
             href={moreInfoLink}

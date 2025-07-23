@@ -11,6 +11,11 @@ import Directions from "./pages/directions";
 import Footer from "./components/footer";
 import PalakkumarPatel from "./pages/sleep-doctors/palakkumar-patel";
 import KevinLaw from "./pages/sleep-doctors/kevin-law";
+import HatimYoussef from "./pages/sleep-doctors/hatim-youssef";
+import JasmeetBajaj from "./pages/sleep-doctors/jasmeet-bajaj";
+import PeterARicketti from "./pages/sleep-doctors/peter-a-ricketti";
+import FareehaHafeez from "./pages/sleep-doctors/fareeha-hafeez";
+import AshganElshinawy from "./pages/sleep-doctors/ashgan-elshinawy";
 
 function App() {
   return (
@@ -27,29 +32,26 @@ function App() {
               path="/sleep-doctors/palakkumar-patel"
               element={<PalakkumarPatel />}
             />
-            <Route
-              path="/sleep-doctors/kevin-law"
-              element={<KevinLaw />}
-            />
+            <Route path="/sleep-doctors/kevin-law" element={<KevinLaw />} />
             <Route
               path="/sleep-doctors/hatim-youssef"
-              element={<PalakkumarPatel />}
+              element={<HatimYoussef />}
             />
             <Route
               path="/sleep-doctors/jasmeet-bajaj"
-              element={<PalakkumarPatel />}
+              element={<JasmeetBajaj />}
             />
             <Route
               path="/sleep-doctors/pater-a-ricketti"
-              element={<PalakkumarPatel />}
+              element={<PeterARicketti />}
             />
             <Route
               path="/sleep-doctors/fareeha-hafeez"
-              element={<PalakkumarPatel />}
+              element={<FareehaHafeez />}
             />
             <Route
               path="/sleep-doctors/ashgan-elshinawy"
-              element={<PalakkumarPatel />}
+              element={<AshganElshinawy />}
             />
 
             <Route path="/services" element={<Services />} />

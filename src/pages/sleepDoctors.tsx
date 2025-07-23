@@ -17,21 +17,21 @@ function SleepDoctors() {
           name={"Kevin Law"}
           suffix={"MD"}
           headshotLink={"/SleepDoctors/kevinLaw.jpg"}
-          titles={["Sleep Medicine", "Pulmonary", "Critical Care"]}
+          titles={["Sleep Medicine", "Pulmonology", "Critical Care"]}
           pageLink="kevin-law"
         />
         <SleepDoctorCard
           name={"Hatim Youssef"}
           suffix={"DO"}
           headshotLink={"/SleepDoctors/hatimYoussef.png"}
-          titles={["Sleep Medicine", "Pulmonary", "Critical Care"]}
+          titles={["Sleep Medicine", "Pulmonology", "Critical Care"]}
           pageLink="hatim-youssef"
         />
         <SleepDoctorCard
           name={"Jasmeet Bajaj"}
           suffix={"MD"}
           headshotLink={"/SleepDoctors/jasmeetBajaj.jpg"}
-          titles={["Sleep Medicine", "Pulmonary", "Critical Care"]}
+          titles={["Sleep Medicine", "Pulmonology", "Critical Care"]}
           pageLink="jasmeet-bajaj"
         />
         <SleepDoctorCard
