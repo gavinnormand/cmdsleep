@@ -48,7 +48,7 @@ function PatientPortal() {
             </a>
           </div>
         </div>
-        <p className="m-8 text-lg">
+        <p className="mt-8 text-lg">
           If you are having difficulty creating or accessing your portal
           account, please call the office for assistance.
         </p>

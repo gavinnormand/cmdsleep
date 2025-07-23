@@ -9,6 +9,8 @@ import Forms from "./pages/forms";
 import Contact from "./pages/contact";
 import Directions from "./pages/directions";
 import Footer from "./components/footer";
+import PalakkumarPatel from "./pages/sleep-doctors/palakkumar-patel";
+import KevinLaw from "./pages/sleep-doctors/kevin-law";
 
 function App() {
   return (
@@ -19,6 +21,37 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sleep-doctors" element={<SleepDoctors />} />
+
+            {/* Sleep Doctor Pages*/}
+            <Route
+              path="/sleep-doctors/palakkumar-patel"
+              element={<PalakkumarPatel />}
+            />
+            <Route
+              path="/sleep-doctors/kevin-law"
+              element={<KevinLaw />}
+            />
+            <Route
+              path="/sleep-doctors/hatim-youssef"
+              element={<PalakkumarPatel />}
+            />
+            <Route
+              path="/sleep-doctors/jasmeet-bajaj"
+              element={<PalakkumarPatel />}
+            />
+            <Route
+              path="/sleep-doctors/pater-a-ricketti"
+              element={<PalakkumarPatel />}
+            />
+            <Route
+              path="/sleep-doctors/fareeha-hafeez"
+              element={<PalakkumarPatel />}
+            />
+            <Route
+              path="/sleep-doctors/ashgan-elshinawy"
+              element={<PalakkumarPatel />}
+            />
+
             <Route path="/services" element={<Services />} />
             <Route path="/sleep-disorders" element={<SleepDisorders />} />
             <Route path="/patient-portal" element={<PatientPortal />} />
