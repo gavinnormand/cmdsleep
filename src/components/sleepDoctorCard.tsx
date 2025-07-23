@@ -22,13 +22,13 @@ const SleepDoctorCard: React.FC<SleepDoctorCardProps> = ({
         src={headshotLink}
         className="m-4 h-64 w-48 rounded-md object-cover"
       ></img>
-      <div className="m-4 flex flex-col justify-between">
+      <div className="m-4 ml-0 flex flex-col justify-between">
         <div>
           <p className="text-2xl font-semibold">
             {name}, {suffix}
           </p>
           {titles.map((title) => (
-            <p className="text-xl">{title}</p>
+            <p className="text-xl">{"- ".concat(title)}</p>
           ))}
         </div>
         <Link

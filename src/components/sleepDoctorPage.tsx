@@ -11,6 +11,8 @@ interface SleepDoctorPageProps {
   boardCertifications: string[];
   moreInfoLink: string;
   note?: string;
+  phone: string;
+  addresses: string[];
 }
 
 const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
@@ -22,23 +24,42 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
   boardCertifications,
   moreInfoLink,
   note,
+  phone,
+  addresses,
 }) => {
   return (
     <div>
-      <PageTitle text={name.concat(", ").concat(suffix)} />
-      <div className="flex flex-col p-8 text-left">
-        <img
-          src={headshotLink}
-          className="mx-auto mb-4 h-64 w-48 justify-center rounded-md object-cover"
-        ></img>
-        <h1 className="mx-auto text-center text-xl">
-          {titles.map((title, index) => (
-            <span>
-              {titles.length - 1 == index ? title : title.concat(", ")}
-            </span>
-          ))}
-        </h1>
-        <h1 className="mt-4 text-xl font-semibold">Biography</h1>
+      <div className="w-full bg-sky-100 py-8">
+        <div className="mx-auto grid w-fit grid-cols-1 gap-y-4 text-center md:grid-cols-2 md:text-left">
+          <img
+            src={headshotLink}
+            className="mx-auto h-64 w-48 justify-center rounded-md object-cover"
+          ></img>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-semibold">
+              {name.concat(", ").concat(suffix)}
+            </h1>
+            <p className="text-xl">
+              {titles.map((title, index) => (
+                <span>
+                  {titles.length - 1 == index ? title : title.concat(", ")}
+                </span>
+              ))}
+            </p>
+            <a
+              href={"tel:+1".concat(phone.replace(/\D/g, ""))}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl text-blue-600 hover:underline active:text-blue-800 active:underline"
+            >
+              {" "}
+              {phone}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="p-8">
+        <h1 className="text-xl font-semibold">Biography</h1>
         <p className="text-lg">{biography}</p>
         <h1 className="mt-4 text-xl font-semibold">Board Certifications</h1>
         <p className="text-lg">

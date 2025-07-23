@@ -17,6 +17,10 @@ function PalakkumarPatel() {
         "Critical Care Medicine",
       ]}
       moreInfoLink={"https://www.rwjbh.org/doctors/palakkumar-patel-md/"}
+      phone={"(609) 586-7400"}
+      addresses={[
+        "2312 Whitehorse-Mercerville Rd, Suite 105 Hamilton, NJ 08619",
+      ]}
     />
   );
 }
