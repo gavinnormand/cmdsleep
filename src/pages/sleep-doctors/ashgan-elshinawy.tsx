@@ -18,6 +18,17 @@ function AshganElshinawy() {
       moreInfoLink={
         "https://www.princetonmedicalgroup.com/providers/ashgan-elshinawy-do/"
       }
+      phone="(609) 924-9300"
+      addresses={[
+        {
+          name: "2 Research Way Building Two, Suite 302 Monroe Township, NJ 08831",
+          link: "https://maps.app.goo.gl/y9JNon6yCwbSzXdPA",
+        },
+        {
+          name: "3 Liberty Street Plainsboro Township, NJ 08536",
+          link: "https://maps.app.goo.gl/X6VWZJiw7WtVNWhA9",
+        },
+      ]}
     />
   );
 }

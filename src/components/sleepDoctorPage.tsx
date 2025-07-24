@@ -1,6 +1,10 @@
 import { LinkIcon, List } from "lucide-react";
 import { Link } from "react-router-dom";
-import PageTitle from "./pageTitle";
+
+interface address {
+  name: string;
+  link: string;
+}
 
 interface SleepDoctorPageProps {
   name: string;
@@ -12,7 +16,7 @@ interface SleepDoctorPageProps {
   moreInfoLink: string;
   note?: string;
   phone: string;
-  addresses: string[];
+  addresses: address[];
 }
 
 const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
@@ -30,12 +34,12 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
   return (
     <div>
       <div className="w-full bg-sky-100 py-8">
-        <div className="mx-auto grid w-fit grid-cols-1 gap-y-4 text-center md:grid-cols-2 md:text-left">
+        <div className="mx-auto grid w-fit grid-cols-1 gap-4 text-center md:grid-cols-2 md:text-left">
           <img
             src={headshotLink}
-            className="mx-auto h-64 w-48 justify-center rounded-md object-cover"
+            className="h-64 w-48 justify-self-center rounded-md object-cover md:justify-self-end"
           ></img>
-          <div className="flex flex-col">
+          <div className="mr-8 flex flex-col justify-self-start">
             <h1 className="text-2xl font-semibold">
               {name.concat(", ").concat(suffix)}
             </h1>
@@ -46,22 +50,46 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
                 </span>
               ))}
             </p>
-            <a
-              href={"tel:+1".concat(phone.replace(/\D/g, ""))}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl text-blue-600 hover:underline active:text-blue-800 active:underline"
-            >
-              {" "}
-              {phone}
-            </a>
+            <p className="text-xl">
+              Phone:
+              <a
+                href={"tel:+1".concat(phone.replace(/\D/g, ""))}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl text-blue-600 hover:underline active:text-blue-800 active:underline"
+              >
+                {phone}
+              </a>
+            </p>
+            <p className="text-xl">Offices:</p>
+            {addresses.map((address) => (
+              <p className="text-xl">
+                {"📍 "}
+                <a
+                  className="text-xl text-blue-600 hover:underline active:text-blue-800 active:underline"
+                  href={address.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {address.name}
+                </a>
+              </p>
+            ))}
           </div>
         </div>
       </div>
       <div className="p-8">
         <h1 className="text-xl font-semibold">Biography</h1>
-        <p className="text-lg">{biography}</p>
-        <h1 className="mt-4 text-xl font-semibold">Board Certifications</h1>
+        <p className="text-lg">
+          {biography.split("\n").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+              <br />
+            </span>
+          ))}
+        </p>
+        <h1 className="text-xl font-semibold">Board Certifications</h1>
         <p className="text-lg">
           {boardCertifications.map((certification, index) => (
             <span>
