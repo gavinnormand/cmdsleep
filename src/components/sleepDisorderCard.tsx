@@ -18,15 +18,18 @@ const SleepDisorderCard: React.FC<SleepDisorderCardProps> = ({
           {name}
         </p>
         {tag && <p className="font-semibold">{tag}</p>}
-        <ul className="list-inside list-disc space-y-2 text-black">
+        <div className="flex flex-col space-y-2">
           {facts.map((fact) => (
-            <li>{fact}</li>
+            <p>
+              {"- "}
+              {fact}
+            </p>
           ))}
-        </ul>
+        </div>
       </div>
       <a
         href={infoLink}
-        className="mt-4 w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+        className="mt-8 w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
       >
         {" "}
         More Info

@@ -5,10 +5,10 @@ function SleepDisorders() {
   return (
     <div>
       <PageTitle text={"Sleep Disorders"} />
-      <div className="flex flex-row flex-wrap justify-center gap-8 p-8">
+      <div className="flex flex-row flex-wrap justify-center gap-8 p-8 md:gap-12 md:p-12">
         <SleepDisorderCard
           name={"Obstructive Sleep Apnea"}
-          tag="Sleep Related Breathing Disorders"
+          tag="Sleep Related Breathing Disorder"
           facts={[
             "Blocks airflow during sleep",
             "Causes snoring and tiredness",
@@ -18,7 +18,7 @@ function SleepDisorders() {
         />
         <SleepDisorderCard
           name={"Central Sleep Apnea"}
-          tag="Sleep Related Breathing Disorders"
+          tag="Sleep Related Breathing Disorder"
           facts={[
             "When the brain skips sending breath signals",
             "Breathing stops without airway blockage",
@@ -28,7 +28,7 @@ function SleepDisorders() {
         />
         <SleepDisorderCard
           name={"Cheyne-Stokes Breathing"}
-          tag="Sleep Related Breathing Disorders"
+          tag="Sleep Related Breathing Disorder"
           facts={[
             "Pattern of waxing and waning breaths",
             "Breathing pauses follow deep, fast breaths",
