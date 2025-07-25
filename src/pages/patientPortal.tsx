@@ -29,7 +29,7 @@ function PatientPortal() {
               href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white"
+              className="w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
             >
               Existing Users
             </a>
@@ -42,7 +42,7 @@ function PatientPortal() {
               href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white"
+              className="w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
             >
               New Users
             </a>

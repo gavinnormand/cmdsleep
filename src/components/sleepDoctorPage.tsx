@@ -51,7 +51,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
               ))}
             </p>
             <p className="text-xl">
-              Phone:
+              Phone:{" "}
               <a
                 href={"tel:+1".concat(phone.replace(/\D/g, ""))}
                 target="_blank"

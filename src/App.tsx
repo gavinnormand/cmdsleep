@@ -9,6 +9,8 @@ import Forms from "./pages/forms";
 import Contact from "./pages/contact";
 import Directions from "./pages/directions";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/scrollToTop";
+
 import PalakkumarPatel from "./pages/sleep-doctors/palakkumar-patel";
 import KevinLaw from "./pages/sleep-doctors/kevin-law";
 import HatimYoussef from "./pages/sleep-doctors/hatim-youssef";
@@ -20,6 +22,7 @@ import AshganElshinawy from "./pages/sleep-doctors/ashgan-elshinawy";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex min-h-screen flex-col">
         <Nav />
         <div className="flex flex-1 flex-col">
