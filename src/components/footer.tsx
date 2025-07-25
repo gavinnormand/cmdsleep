@@ -1,10 +1,14 @@
 function Footer() {
   return (
-    <div className="flex items-center justify-between border-t-1 border-t-black px-12 py-4">
+    <div className="flex items-center justify-between border-t-1 border-t-black px-4 py-4 md:px-12">
       <p className="text-gray-500">
-        &copy; 2025 Comprehensive Medical Diagnostics
+        &copy; 2025{" "}
+        <span className="hidden md:inline">
+          Comprehensive Medical Diagnostics
+        </span>{" "}
+        <span className="inline md:hidden">CMD Sleep</span>
       </p>
-      <div className="inline-flex gap-x-4 text-blue-600">
+      <div className="flex flex-col gap-x-4 text-blue-600 md:flex-row">
         <a
           href="tel:+16084901444"
           target="_blank"

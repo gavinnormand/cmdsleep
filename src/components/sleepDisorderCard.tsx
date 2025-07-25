@@ -29,6 +29,8 @@ const SleepDisorderCard: React.FC<SleepDisorderCardProps> = ({
       </div>
       <a
         href={infoLink}
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-8 w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
       >
         {" "}
