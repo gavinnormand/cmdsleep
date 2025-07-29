@@ -4,8 +4,8 @@ interface PageTitleProps {
 
 const PageTitle: React.FC<PageTitleProps> = ({ text }) => {
   return (
-    <div className="flex h-16 w-full items-center bg-sky-100 py-24 text-center">
-      <h1 className="mx-auto text-6xl font-bold text-blue-800">{text}</h1>
+    <div className="bg-secondary-light flex h-16 w-full items-center py-24 text-center">
+      <h1 className="text-primary mx-auto text-6xl font-bold">{text}</h1>
     </div>
   );
 };

@@ -19,7 +19,7 @@ const SleepDoctorCard: React.FC<SleepDoctorCardProps> = ({
   pageLink,
 }) => {
   return (
-    <div className="flex w-fit flex-col items-center rounded-xl border-2 border-blue-800 bg-sky-100 md:flex-row md:items-stretch">
+    <div className="border-primary-dark bg-secondary-lighter flex w-fit flex-col items-center rounded-xl border-2 md:flex-row md:items-stretch">
       <img
         src={headshotLink}
         className="m-4 h-64 w-48 rounded-md object-cover"
@@ -36,7 +36,7 @@ const SleepDoctorCard: React.FC<SleepDoctorCardProps> = ({
         </div>
         <Link
           to={pageLink}
-          className="mx-auto my-4 md:m-0 flex w-fit items-center rounded-md border-2 border-blue-600 p-3 text-center font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+          className="border-primary text-primary hover:bg-primary active:bg-primary mx-auto my-4 flex w-fit items-center rounded-md border-2 p-3 text-center font-semibold transition-all hover:text-white active:text-white md:m-0"
         >
           More Information <ArrowRight className="ml-2 inline h-5.5 w-5.5" />
         </Link>

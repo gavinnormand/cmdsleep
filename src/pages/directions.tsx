@@ -17,7 +17,7 @@ function Directions() {
       <PageTitle text={"Directions"} />
       <div className="flex flex-1">
         <div className="grid flex-1 grid-cols-1 items-start gap-4 p-8 lg:grid-cols-2">
-          <div className="flex flex-col items-center gap-y-1.5 text-xl">
+          <div className="flex flex-col items-center text-xl">
             <p className="text-2xl font-semibold">
               Need help finding our office?{" "}
             </p>
@@ -27,7 +27,7 @@ function Directions() {
               Comprehensive&nbsp;Medical&nbsp;Diagnostics,&nbsp;LLC
             </p>
             <a
-              className="text-center text-blue-600 hover:underline active:text-blue-800 active:underline"
+              className="text-primary-light active:text-primary-dark text-center hover:underline active:underline"
               href="https://maps.app.goo.gl/5Pwx8Ua2wbcUFGKp6"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,10 +36,13 @@ function Directions() {
               <wbr />
               Suite&nbsp;205&nbsp;East&nbsp;Windsor,&nbsp;NJ&nbsp;08520
             </a>{" "}
-            <div className="my-8">
+            <div className="mt-8">
               <Hours hours={hours} />
-              <p className="mt-2">If you have an in lab sleep study you must arrive at <span className="font-bold">8:15 PM</span></p>
             </div>
+            <p className="mt-2">
+              If you have an in lab sleep study you must arrive at{" "}
+              <span className="font-bold">8:15 PM</span>
+            </p>
           </div>
           <div className="h-full min-h-[400px] w-full overflow-hidden rounded-xl shadow-lg">
             <iframe

@@ -20,7 +20,7 @@ function Contact() {
               href="https://patientportal.advancedmd.com/160926/onlineintake/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-blue-600 hover:underline active:text-blue-800 active:underline"
+              className="text-primary-light active:text-primary-dark mx-1 hover:underline active:underline"
             >
               here
             </a>
@@ -33,7 +33,7 @@ function Contact() {
               href="tel:+16094901444"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-blue-600 hover:underline active:text-blue-800 active:underline"
+              className="text-primary-light active:text-primary-dark mx-1 hover:underline active:underline"
             >
               (609) 490-1444
             </a>
@@ -45,7 +45,7 @@ function Contact() {
               href="tel:+16094901133"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-blue-600 hover:underline active:text-blue-800 active:underline"
+              className="text-primary-light active:text-primary-dark mx-1 hover:underline active:underline"
             >
               (609) 490-1133
             </a>
@@ -57,7 +57,7 @@ function Contact() {
               href="mailto:cmdsleep@live.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-blue-600 hover:underline active:text-blue-800 active:underline"
+              className="text-primary-light active:text-primary-dark mx-1 hover:underline active:underline"
             >
               cmdsleep@live.com
             </a>

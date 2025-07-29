@@ -9,8 +9,8 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: 'Site Message <messages@messages.gavinnormand.com>',
-      to: ['normandgavin@gmail.com'],
-      subject: 'New Contact Form Message',
+      to: ['cmdsleep@gmail.com'],
+      subject: 'New Website Contact Form Message',
       html: `<p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
              <p><strong>Message:</strong><br/>${message}</p>`

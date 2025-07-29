@@ -8,12 +8,12 @@ function Footer() {
         </span>{" "}
         <span className="inline md:hidden">CMD Sleep</span>
       </p>
-      <div className="flex flex-col gap-x-4 text-blue-600 md:flex-row">
+      <div className="text-primary-light flex flex-col gap-x-4 md:flex-row">
         <a
           href="tel:+16084901444"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline active:text-blue-800 active:underline"
+          className="active:text-primary-dark hover:underline active:underline"
         >
           (609) 490-1444
         </a>
@@ -21,7 +21,7 @@ function Footer() {
           href="mailto:cmdsleep@live.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline active:text-blue-800 active:underline"
+          className="active:text-primary-dark hover:underline active:underline"
         >
           cmdsleep@live.com
         </a>

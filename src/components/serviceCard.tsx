@@ -33,9 +33,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   };
 
   return (
-    <div className="flex w-full flex-col justify-between justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-center shadow-lg">
+    <div className="border-primary-dark bg-secondary-lighter flex w-full flex-col justify-between justify-self-center rounded-xl border-2 p-6 text-center shadow-lg">
       <div className="flex flex-col gap-y-3">
-        <p className="text-center text-4xl font-semibold text-blue-800">
+        <p className="text-primary text-center text-4xl font-semibold">
           {name}
         </p>
         <p className="text-lg">{description}</p>
@@ -89,7 +89,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         href={infoLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="mx-auto mt-8 w-1/2 rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+        className="border-primary text-primary hover:bg-primary active:bg-primary mx-auto mt-8 w-1/2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
       >
         {" "}
         More Info

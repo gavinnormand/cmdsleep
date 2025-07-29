@@ -10,8 +10,8 @@ function PatientPortal() {
           stay informed and engaged with their care!
         </p>
         <div className="flex flex-row flex-wrap justify-center">
-          <div className="m-8 w-[350px] justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-left shadow-lg">
-            <p className="mb-4 text-lg font-semibold text-blue-800">
+          <div className="border-primary-dark bg-secondary-lighter m-8 w-[350px] justify-self-center rounded-xl border-2 p-6 text-left shadow-lg">
+            <p className="text-primary mb-4 text-lg font-semibold">
               It allows you to:
             </p>
             <ul className="list-inside list-disc space-y-2 text-black">
@@ -21,28 +21,28 @@ function PatientPortal() {
               <li>Pay your bills online</li>
             </ul>
           </div>
-          <div className="m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-left shadow-lg">
-            <p className="text-lg font-semibold text-blue-800">
+          <div className="border-primary-dark bg-secondary-lighter m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 p-6 text-left shadow-lg">
+            <p className="text-primary text-lg font-semibold">
               Existing patient portal users click here to sign in!
             </p>
             <a
               href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+              className="border-primary text-primary hover:bg-primary active:bg-primary w-full rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
             >
               Existing Users
             </a>
           </div>
-          <div className="m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-left shadow-lg">
-            <p className="text-lg font-semibold text-blue-800">
+          <div className="border-primary-dark bg-secondary-lighter m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 p-6 text-left shadow-lg">
+            <p className="text-primary text-lg font-semibold">
               Don’t have a patient portal account? Click here to sign up?
             </p>
             <a
-              href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
+              href="https://pp-wfe-100.advancedmd.com/160926/account/register"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+              className="border-primary text-primary hover:bg-primary active:bg-primary w-full rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
             >
               New Users
             </a>

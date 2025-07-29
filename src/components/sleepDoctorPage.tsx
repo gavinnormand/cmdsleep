@@ -33,7 +33,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
 }) => {
   return (
     <div>
-      <div className="w-full bg-sky-100 py-8">
+      <div className="bg-secondary-light w-full py-8">
         <div className="mx-auto grid w-fit grid-cols-1 gap-4 text-center md:grid-cols-2 md:text-left">
           <img
             src={headshotLink}
@@ -56,7 +56,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
                 href={"tel:+1".concat(phone.replace(/\D/g, ""))}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl text-blue-600 hover:underline active:text-blue-800 active:underline"
+                className="text-primary-light active:text-primary-dark text-xl hover:underline active:underline"
               >
                 {phone}
               </a>
@@ -66,7 +66,7 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
               <p className="text-xl">
                 {"📍 "}
                 <a
-                  className="text-xl text-blue-600 hover:underline active:text-blue-800 active:underline"
+                  className="text-primary-light active:text-primary-dark text-xl hover:underline active:underline"
                   href={address.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -105,13 +105,13 @@ const SleepDoctorPage: React.FC<SleepDoctorPageProps> = ({
             href={moreInfoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-fit items-center gap-x-3 rounded-md border-2 border-blue-600 px-8 py-3 text-center text-xl font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+            className="border-primary text-primary hover:bg-primary active:bg-primary flex w-fit items-center gap-x-3 rounded-md border-2 px-8 py-3 text-center text-xl font-semibold transition-all hover:text-white active:text-white"
           >
             More Information <LinkIcon />
           </a>
           <Link
             to={"/sleep-doctors"}
-            className="flex w-fit items-center gap-x-3 rounded-md border-2 border-blue-600 px-8 py-3 text-center text-xl font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+            className="border-primary text-primary hover:bg-primary active:bg-primary flex w-fit items-center gap-x-3 rounded-md border-2 px-8 py-3 text-center text-xl font-semibold transition-all hover:text-white active:text-white"
           >
             Other Doctors <List />
           </Link>

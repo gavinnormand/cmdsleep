@@ -76,7 +76,7 @@ function ContactForm() {
           required={true}
           name="message"
         ></textarea>
-        <button className="my-2 cursor-pointer rounded-md border-2 border-blue-600 p-3 font-bold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white">
+        <button className="my-2 cursor-pointer rounded-md border-2 border-primary p-3 font-bold text-primary transition-all hover:bg-primary hover:text-white active:bg-primary active:text-white">
           Send Message
         </button>
       </form>

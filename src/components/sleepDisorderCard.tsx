@@ -12,9 +12,9 @@ const SleepDisorderCard: React.FC<SleepDisorderCardProps> = ({
   infoLink,
 }) => {
   return (
-    <div className="flex w-[400px] flex-col justify-between justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-center shadow-lg">
+    <div className="border-primary-dark bg-secondary-lighter flex w-[400px] flex-col justify-between justify-self-center rounded-xl border-2 p-6 text-center shadow-lg">
       <div className="flex flex-col gap-y-3">
-        <p className="text-center text-2xl font-semibold text-blue-800">
+        <p className="text-primary text-center text-2xl font-semibold">
           {name}
         </p>
         {tag && <p className="font-semibold">{tag}</p>}
@@ -31,7 +31,7 @@ const SleepDisorderCard: React.FC<SleepDisorderCardProps> = ({
         href={infoLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-8 w-full rounded-md border-2 border-blue-600 p-3 text-center align-baseline font-semibold text-blue-800 transition-all hover:bg-blue-600 hover:text-white active:bg-blue-600 active:text-white"
+        className="border-primary0 text-primary hover:bg-primary active:bg-primary mt-8 w-full rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
       >
         {" "}
         More Info

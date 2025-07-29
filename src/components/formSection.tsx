@@ -18,7 +18,7 @@ const FormSection: React.FC<FormSectionProps> = ({ title, forms }) => {
             href={form.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg text-blue-600 hover:underline active:text-blue-800 active:underline"
+            className="text-primary-light active:text-primary-dark text-lg hover:underline active:underline"
           >
             {form.name}
           </a>
