@@ -5,6 +5,7 @@ interface SleepDoctorCardProps {
   name: string;
   suffix: string;
   headshotLink: string;
+  tag?: string;
   titles: string[];
   pageLink: string;
 }
@@ -13,6 +14,7 @@ const SleepDoctorCard: React.FC<SleepDoctorCardProps> = ({
   name,
   suffix,
   headshotLink,
+  tag,
   titles,
   pageLink,
 }) => {
@@ -27,8 +29,9 @@ const SleepDoctorCard: React.FC<SleepDoctorCardProps> = ({
           <p className="text-2xl font-semibold">
             {name}, {suffix}
           </p>
+          {tag && <p className="text-xl font-semibold">{tag}</p>}
           {titles.map((title) => (
-            <p className="text-xl">{"- ".concat(title)}</p>
+            <p className="text-lg">{"- ".concat(title)}</p>
           ))}
         </div>
         <Link

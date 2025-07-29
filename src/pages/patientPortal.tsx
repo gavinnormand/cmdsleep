@@ -23,7 +23,7 @@ function PatientPortal() {
           </div>
           <div className="m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-left shadow-lg">
             <p className="text-lg font-semibold text-blue-800">
-              Existing Portal Users Click here to sign in!
+              Existing patient portal users click here to sign in!
             </p>
             <a
               href="https://pp-wfe-100.advancedmd.com/160926/account/logon"
@@ -36,7 +36,7 @@ function PatientPortal() {
           </div>
           <div className="m-8 flex w-[350px] flex-col justify-around gap-y-4 justify-self-center rounded-xl border-2 border-blue-800 bg-sky-50 p-6 text-left shadow-lg">
             <p className="text-lg font-semibold text-blue-800">
-              Don’t have a portal account? Click here to sign up?
+              Don’t have a patient portal account? Click here to sign up?
             </p>
             <a
               href="https://pp-wfe-100.advancedmd.com/160926/account/logon"

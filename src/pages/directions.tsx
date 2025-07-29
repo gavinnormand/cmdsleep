@@ -2,11 +2,11 @@ import Hours from "../components/hours";
 import PageTitle from "../components/pageTitle";
 
 const hours = {
-  monday: "9:00 AM - 5:00 PM",
-  tuesday: "9:00 AM - 5:00 PM",
-  wednesday: "9:00 AM - 5:00 PM",
-  thursday: "9:00 AM - 5:00 PM",
-  friday: "9:00 AM - 5:00 PM",
+  monday: "10:30 AM - 4:30 PM",
+  tuesday: "10:30 AM - 4:30 PM",
+  wednesday: "10:30 AM - 4:30 PM",
+  thursday: "10:30 AM - 4:30 PM",
+  friday: "10:30 AM - 4:30 PM",
   saturday: "Closed",
   sunday: "Closed",
 };
@@ -27,7 +27,7 @@ function Directions() {
               Comprehensive&nbsp;Medical&nbsp;Diagnostics,&nbsp;LLC
             </p>
             <a
-              className="text-center"
+              className="text-center text-blue-600 hover:underline active:text-blue-800 active:underline"
               href="https://maps.app.goo.gl/5Pwx8Ua2wbcUFGKp6"
               target="_blank"
               rel="noopener noreferrer"
@@ -38,6 +38,7 @@ function Directions() {
             </a>{" "}
             <div className="my-8">
               <Hours hours={hours} />
+              <p className="mt-2">If you have an in lab sleep study you must arrive at <span className="font-bold">8:15 PM</span></p>
             </div>
           </div>
           <div className="h-full min-h-[400px] w-full overflow-hidden rounded-xl shadow-lg">
