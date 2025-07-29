@@ -47,7 +47,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               showInstructions ? "rotate-90" : "rotate-0"
             }`}
           />
-          <h1 className="text-lg font-semibold">Instructions</h1>
+          <h1 className="text-left text-lg font-semibold">Instructions</h1>
         </div>
       </button>
       {showInstructions && (
@@ -66,7 +66,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               showFAQs ? "rotate-90" : "rotate-0"
             }`}
           />
-          <h1 className="text-lg font-semibold">Frequently Asked Questions</h1>
+          <h1 className="text-left text-lg font-semibold">
+            Frequently Asked Questions
+          </h1>
         </div>
       </button>
       {showFAQs && (
