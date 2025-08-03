@@ -127,7 +127,7 @@ function Services() {
           <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">At Home</h1>
           <ServiceCard
             name={"Home Sleep Test"}
-            image="/Services/ares.jpg"
+            image="/services/ares.jpg"
             description={
               "A home sleep test is a diagnostic study that monitors various physiological parameters while you sleep in your own home. The test requires a prescription from a care provider and typically involves a three-night study. You'll pick up monitoring equipment from the Sleep Center, which includes devices to track your heart rate, breathing, and oxygen levels. The equipment is sturdy, easy to use, and non-painful. You'll need to record at least 7 hours of sleep data per night while wearing the equipment."
             }
@@ -257,7 +257,7 @@ function Services() {
           <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">In Lab</h1>
           <ServiceCard
             name={"Polysomnogram"}
-            image="/Services/polysomnography.jpg"
+            image="/services/polysomnography.jpg"
             description={
               "Polysomnography is a noninvasive, painless in-lab test that records your brain waves, oxygen level in your blood, heart rate, and breathing during sleep. It also measures eye and leg movements. The test is usually performed at night but may be done during the day for shift workers. Polysomnography monitors your sleep stages and cycles to identify if or when your sleep patterns are disrupted and why. The test can help diagnose sleep disorders such as Obstructive Sleep Apnea, Periodic Limb Movements, and Narcolepsy. It may also be used to determine a treatment plan or adjust existing treatment. The most common side effect is skin irritation from the adhesive used to attach test sensors."
             }
@@ -300,7 +300,7 @@ function Services() {
         </div>
         <ServiceCard
           name={"CPAP/BiPAP Titration"}
-          image="/Services/cpap.avif"
+          image="/services/cpap.avif"
           description={
             "A CPAP sleep study, also known as a CPAP titration study, is a type of sleep study used to determine the correct air pressure setting for a CPAP machine, which is used to treat sleep-related breathing disorders like sleep apnea. This study helps doctors find the optimal pressure needed to keep your airway open during sleep, ensuring effective treatment for your sleep apnea. The study involves connecting you to a CPAP machine while you spend the night at a sleep facility. If CPAP proves insufficient, a BiPAP machine may be used, which delivers two different pressure levels: higher during inhalation and lower during exhalation."
           }
@@ -343,7 +343,7 @@ function Services() {
         />
         <ServiceCard
           name={"Split Night Sleep Study"}
-          image="/Services/splitNight.webp"
+          image="/services/splitNight.webp"
           description={
             "A split-night study includes both diagnostics Polysomnogram with a CPAP titration on the same night, primarily for individuals suspected of having severe obstructive sleep apnea. This approach allows for both diagnosis and treatment initiation within a single overnight session. The first part of the study is a standard polysomnogram to monitor your breathing for signs of Obstructive Sleep Apnea, periods where you actually stop or have difficulty breathing. If significant Obstructive Sleep Apnea is detected during the diagnostic phase, the study transitions to CPAP titration in the second part. While efficient, there can be challenges with adapting to CPAP during the same night, and some patients may require an additional night of study to acquire the optimal pressure setting."
           }
@@ -373,7 +373,7 @@ function Services() {
         />
         <ServiceCard
           name={"MSLT/MWT"}
-          image="/Services/mslt-mwt.webp"
+          image="/services/mslt-mwt.webp"
           description={
             'The Multiple Sleep Latency Test (MSLT) is a standardized test to rule out Narcolepsy and/or Idiopathic Hypersomnolence (Excessive Daytime Sleepiness), where each nap is an "opportunity" for you to sleep and monitors your tendency to sleep when given the opportunity. The Maintenance of Wakefulness Test (MWT) is a standardized test to measure your level of alertness/wakefulness, where you attempt to remain awake while sitting in a darkened room during each 20-minute session. Both tests are performed throughout the day immediately following your Standard PSG Study, with sessions occurring at 2-hour intervals.'
           }
