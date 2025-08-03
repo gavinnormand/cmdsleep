@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ClipboardList, LinkIcon } from "lucide-react";
 import { useState } from "react";
 
 interface faq {
@@ -8,16 +8,24 @@ interface faq {
 
 interface ServiceCardProps {
   name: string;
+  image?: string;
   description: string;
-  instructions: string[];
+  instructions: {
+    before: string[];
+    during: string[];
+    after: string[];
+  };
   faqs: faq[];
+  checklistLink?: string;
   infoLink: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   name,
+  image,
   description,
   instructions,
+  checklistLink,
   faqs,
   infoLink,
 }) => {
@@ -38,7 +46,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <p className="text-primary text-center text-4xl font-semibold">
           {name}
         </p>
-        <p className="text-lg">{description}</p>
+        {image && (
+          <img
+            src={image}
+            className="mx-auto h-64 rounded-xl object-cover shadow-lg"
+          ></img>
+        )}
+        <p className="text-lg">
+          {description.split("\n").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+              <br />
+            </span>
+          ))}
+        </p>
       </div>
       <button onClick={toggleInstructions} className="w-fit">
         <div className="inline-flex items-center">
@@ -51,8 +73,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
       </button>
       {showInstructions && (
-        <div className="ml-2 flex flex-col items-start">
-          {instructions.map((instruction, index) => (
+        <div className="ml-2 flex flex-col items-start gap-2">
+          <p className="text-lg font-semibold">Before your study:</p>
+          {instructions.before.map((instruction, index) => (
+            <p key={index} className="text-lg">
+              <span className="font-semibold">{index + 1}.</span> {instruction}
+            </p>
+          ))}
+          <p className="mt-2 text-lg font-semibold">During your study:</p>
+          {instructions.during.map((instruction, index) => (
+            <p key={index} className="text-lg">
+              <span className="font-semibold">{index + 1}.</span> {instruction}
+            </p>
+          ))}
+          <p className="mt-2 text-lg font-semibold">After your study:</p>
+          {instructions.after.map((instruction, index) => (
             <p key={index} className="text-lg">
               <span className="font-semibold">{index + 1}.</span> {instruction}
             </p>
@@ -85,15 +120,28 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           ))}
         </div>
       )}
-      <a
-        href={infoLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="border-primary text-primary hover:bg-primary active:bg-primary mx-auto mt-8 w-1/2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
-      >
-        {" "}
-        More Info
-      </a>
+      <div className="flex flex-row flex-wrap justify-center gap-x-12 px-0">
+        {checklistLink && (
+          <a
+            href={checklistLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-primary text-primary hover:bg-primary active:bg-primary mt-8 flex w-1/3 min-w-72 flex-row items-center justify-center gap-x-2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
+          >
+            {" "}
+            Checklist <ClipboardList className="inline h-5.5 w-5.5" />
+          </a>
+        )}
+        <a
+          href={infoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-primary text-primary hover:bg-primary active:bg-primary mt-8 flex w-1/3 min-w-72 flex-row items-center justify-center gap-x-2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
+        >
+          {" "}
+          More Info <LinkIcon className="inline h-5.5 w-5.5" />
+        </a>
+      </div>
     </div>
   );
 };

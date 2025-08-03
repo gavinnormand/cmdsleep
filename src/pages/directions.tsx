@@ -1,15 +1,4 @@
-import Hours from "../components/hours";
 import PageTitle from "../components/pageTitle";
-
-const hours = {
-  monday: "10:30 AM - 4:30 PM",
-  tuesday: "10:30 AM - 4:30 PM",
-  wednesday: "10:30 AM - 4:30 PM",
-  thursday: "10:30 AM - 4:30 PM",
-  friday: "10:30 AM - 4:30 PM",
-  saturday: "Closed",
-  sunday: "Closed",
-};
 
 function Directions() {
   return (
@@ -28,7 +17,7 @@ function Directions() {
             </p>
             <a
               className="text-primary-light active:text-primary-dark text-center hover:underline active:underline"
-              href="https://maps.app.goo.gl/5Pwx8Ua2wbcUFGKp6"
+              href="https://maps.app.goo.gl/i2AX5h4L5ZqSNrgh9"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,9 +25,23 @@ function Directions() {
               <wbr />
               Suite&nbsp;205&nbsp;East&nbsp;Windsor,&nbsp;NJ&nbsp;08520
             </a>{" "}
-            <div className="mt-8">
-              <Hours hours={hours} />
-            </div>
+            <p className="mt-2 text-center">
+              Located on the second floor. On the left out of the stairs, or
+              straight ahead and to the right out of the elevator.
+            </p>
+            <h1 className="mt-4 text-center font-semibold">Business Hours:</h1>
+            <p className="text-center">
+              Please call the office at{" "}
+              <a
+                href="tel:+16094901444"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-light active:text-primary-dark inline hover:underline active:underline"
+              >
+                (609) 490-1444
+              </a>{" "}
+              to confirm hours before visiting.
+            </p>
             <p className="mt-2">
               If you have an in lab sleep study you must arrive at{" "}
               <span className="font-bold">8:15 PM</span>
@@ -46,7 +49,7 @@ function Directions() {
           </div>
           <div className="h-full min-h-[400px] w-full overflow-hidden rounded-xl shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231.97371077141725!2d-74.55898784741692!3d40.28277471092482!2m3!1f0!2f39.431352904321365!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89c3de4e059219a9%3A0x29cd2b3d4d318c36!2s300%20Princeton%20Hightstown%20Rd%20%23205%2C%20East%20Windsor%2C%20NJ%2008520!5e1!3m2!1sen!2sus!4v1752466625253!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220.7161522920942!2d-74.5581610409085!3d40.284304115795535!2m3!1f0!2f39.47461514310944!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89c3de4e05874e29%3A0x2d91d8277330621d!2sComprehensive%20Medical%20Diagnostics!5e1!3m2!1sen!2sus!4v1753899383301!5m2!1sen!2sus"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
