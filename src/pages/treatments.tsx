@@ -42,7 +42,7 @@ function Treatments() {
             </div>
             <TreatmentCard
               name={"Auto-PAP"}
-              image={"/treatments/autopap.webp"}
+              image={"/treatments/autopap.jpg"}
               description={
                 "Also known as APAP or Auto-Adjusting PAP, is a type of machine that automatically adjusts air pressure based on the user's breathing patterns. Unlike CPAP machines that deliver a constant air pressure, AutoPAP machines use sensors to detect changes in airflow and breathing disturbances like snoring, apneas, and hypopneas. When such disturbances are detected, the AutoPAP machine increases the air pressure to keep the airway open and prevent obstructions. Once breathing is normalized, the pressure is lowered back to the minimum effective level."
               }

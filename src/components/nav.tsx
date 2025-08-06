@@ -55,8 +55,7 @@ function Nav() {
           )}
         </button>
         <Link to="/" className="flex items-center justify-center">
-          <img src="/cmdsleepLogo.png" className="hidden h-12 sm:block"></img>
-          <img src="/cmdsleepIcon.png" className="block h-12 sm:hidden"></img>
+          <img src="/cmdsleepLogo.png" className="h-12 object-contain"></img>
         </Link>
       </div>
       <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />

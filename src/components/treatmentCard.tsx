@@ -39,7 +39,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
         {image && (
           <img
             src={image}
-            className="mx-auto h-64 min-w-72 rounded-xl object-cover shadow-lg"
+            className="mx-auto h-64 rounded-xl object-cover shadow-lg"
           ></img>
         )}
         <p className="text-lg">
