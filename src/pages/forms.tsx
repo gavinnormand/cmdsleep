@@ -4,93 +4,93 @@ import PageTitle from "../components/pageTitle";
 const homeSleepTestForms = [
   {
     name: "Adults Home Sleep Test Forms and Questionnaires",
-    link: "/forms/home/Adults_HST_Forms-and-Questionnaires.pdf",
+    link: "/forms/home/adult-hst-forms-and-questionnaires.pdf",
   },
   {
     name: "Pediatric Home Sleep Test Forms and Questionnaires",
-    link: "/forms/home/Pediatric_HST_Forms-and-Questionnaires.pdf",
+    link: "/forms/home/pediatric-hst-forms-and-questionnaires.pdf",
   },
 ];
 
 const inLabSleepStudyForms = [
   {
-    name: "Adults In Lab Sleep Study Forms and Questionnaires",
-    link: "/forms/in-lab/Adults_In-Lab-Forms-and-Questionnaires.pdf",
+    name: "Adults In-Lab Sleep Study Forms and Questionnaires",
+    link: "/forms/in-lab/adult-in-lab-forms-and-questionnaires.pdf",
   },
   {
-    name: "Pediatric In Lab Sleep Study Forms and Questionnaires",
-    link: "/forms/in-lab/Pediatric_In-Lab_Forms-and-Questionnaires.pdf",
+    name: "Pediatric In-Lab Sleep Study Forms and Questionnaires",
+    link: "/forms/in-lab/pediatric-in-lab-forms-and-questionnaires.pdf",
+  },
+];
+
+const demographicForms = [
+  {
+    name: "Demographic Sheet",
+    link: "/forms/demographics/demographic-sheet.pdf",
+  },
+];
+
+const consentForms = [
+  {
+    name: "Home Sleep Test Consent",
+    link: "/forms/consent/home-sleep-test-consent.pdf",
+  },
+  {
+    name: "In-Lab Sleep Study Consent",
+    link: "/forms/consent/in-lab-sleep-study-consent.pdf",
+  },
+  {
+    name: "Insurance Agreement",
+    link: "/forms/consent/insurance-agreement.pdf",
+  },
+];
+
+const questionnaireForms = [
+  {
+    name: "SleepMed Ares Questionnaire",
+    link: "/forms/questionnaires/sleepmed-ares-questionnaire.pdf",
+  },
+  {
+    name: "Adults Sleep Disorder Questionnaire",
+    link: "/forms/questionnaires/adults-sleep-disorder-questionnaire.pdf",
+  },
+  {
+    name: "Pediatric Sleep Questionnaire",
+    link: "/forms/questionnaires/pediatric-sleep-questionnaire.pdf",
+  },
+  {
+    name: "Sleep Screening Tool",
+    link: "/forms/questionnaires/sleep-screening-tool.pdf",
+  },
+  {
+    name: "Bed Partner Questionnaire",
+    link: "/forms/questionnaires/bed-partner-questionnaire.pdf",
+  },
+  {
+    name: "Pain Scale",
+    link: "/forms/questionnaires/pain-scale.pdf",
+  },
+  {
+    name: "CMD Epworth Questionnaire",
+    link: "/forms/questionnaires/cmd-epworth-form.pdf",
+  },
+  {
+    name: "Insomnia Severity Index",
+    link: "/forms/questionnaires/insomnia-severity-index.pdf",
+  },
+];
+
+const releaseOfMedicalInformationForms = [
+  {
+    name: "Patient Authorization for Release of Medical Information",
+    link: "/forms/release-of-medical-information/patient-authorization-for-release-of-medical-information.pdf",
   },
 ];
 
 const otherForms = [
   {
-    name: "Demographic Sheet",
-    link: "/other-forms/demographic-sheet.pdf",
-  },
-  {
-    name: "Home Sleep Test Consent and Equipment Acknowledgment",
-    link: "/other-forms/HOME-SLEEP-TEST-CONSENT-AND-EQUIPMENT-ACKNOWLEDGMENT.pdf",
-  },
-  {
-    name: "Insurance Agreements",
-    link: "/other-forms/Insurance-Agreements.pdf",
-  },
-  {
-    name: "MSLT Questionnaires",
-    link: "/other-forms/MSLT-QUESTIONNAIRES.pdf",
-  },
-  {
-    name: "Pain Scale",
-    link: "/other-forms/Pain-Scale.pdf",
-  },
-  {
     name: "Paper Measuring Tape",
-    link: "/other-forms/Paper-Measuring-Tape.pdf",
-  },
-  {
-    name: "Patient Authorization for Release of Medical Information",
-    link: "/other-forms/PATIENT-AUTHORIZATION-FOR-RELEASE-OF-MEDICAL-INFORMATION.pdf",
-  },
-  {
-    name: "Pediatric Bedtime Questionnaire",
-    link: "/other-forms/Pediatric-Bedtime-Questionnaire.pdf",
-  },
-  {
-    name: "Sleep Screening Tool",
-    link: "/other-forms/Sleep-screening-tool.pdf",
-  },
-  {
-    name: "SLEEPMED Ares Questionnaire",
-    link: "/other-forms/SLEEPMED-ARES-Questionnaire.pdf",
-  },
-  {
-    name: "Pediatric Sleep Questionnaire",
-    link: "/other-forms/Pediatric-Sleep-Questionnaire_0.pdf",
-  },
-  {
-    name: "Printable Tape Measure",
-    link: "/other-forms/printable-tape-measure.pdf",
-  },
-  {
-    name: "Adults Sleep Disorder Questionnaire",
-    link: "/other-forms/Adults_Sleep-Disorder-Questionnaire.pdf",
-  },
-  {
-    name: "Bed Partner Questionnaire",
-    link: "/other-forms/Bed-Partner-Questionnaire.pdf",
-  },
-  {
-    name: "Bedtime and Morning Questionnaire",
-    link: "/other-forms/Bedtime-and-Morning-Questionnaire.pdf",
-  },
-  {
-    name: "In-Lab CMD Consent Form",
-    link: "/other-forms/CMD_Consent-Form_In-Lab.pdf",
-  },
-  {
-    name: "CMD Epworth Form",
-    link: "/other-forms/CMD-Epworth-Form.pdf",
+    link: "/forms/other-forms/paper-measuring-tape.pdf",
   },
 ];
 
@@ -106,6 +106,13 @@ function Forms() {
         <FormSection
           title={"In-Lab Sleep Study Forms"}
           forms={inLabSleepStudyForms}
+        />
+        <FormSection title={"Demographic Forms"} forms={demographicForms} />
+        <FormSection title={"Consent Forms"} forms={consentForms} />
+        <FormSection title={"Questionnaires"} forms={questionnaireForms} />
+        <FormSection
+          title={"Release of Medical Information Forms"}
+          forms={releaseOfMedicalInformationForms}
         />
         <FormSection title={"Other Forms"} forms={otherForms} />
       </div>

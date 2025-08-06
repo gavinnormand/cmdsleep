@@ -18,6 +18,7 @@ import JasmeetBajaj from "./pages/sleep-doctors/jasmeet-bajaj";
 import PeterARicketti from "./pages/sleep-doctors/peter-a-ricketti";
 import FareehaHafeez from "./pages/sleep-doctors/fareeha-hafeez";
 import AshganElshinawy from "./pages/sleep-doctors/ashgan-elshinawy";
+import Treatments from "./pages/treatments";
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
         <div className="flex flex-1 flex-col">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/patient-portal" element={<PatientPortal />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/sleep-disorders" element={<SleepDisorders />} />
+            <Route path="/treatments" element={<Treatments />} />
+            <Route path="/forms" element={<Forms />} />
             <Route path="/sleep-doctors" element={<SleepDoctors />} />
 
             {/* Sleep Doctor Pages*/}
@@ -57,10 +63,6 @@ function App() {
               element={<AshganElshinawy />}
             />
 
-            <Route path="/services" element={<Services />} />
-            <Route path="/sleep-disorders" element={<SleepDisorders />} />
-            <Route path="/patient-portal" element={<PatientPortal />} />
-            <Route path="/forms" element={<Forms />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/directions" element={<Directions />} />
           </Routes>

@@ -123,7 +123,7 @@ function Services() {
             blood oxygen levels while you sleep.
           </p>
         </div>
-        <div className="flex flex-col gap-2">
+        <div id="Home-Sleep-Test" className="flex flex-col gap-2">
           <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">At Home</h1>
           <ServiceCard
             name={"Home Sleep Test"}
@@ -253,11 +253,11 @@ function Services() {
             }
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div id="In-Lab-Sleep-Study" className="flex flex-col gap-2">
           <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">In Lab</h1>
           <ServiceCard
             name={"Polysomnogram"}
-            image="/services/polysomnography.jpg"
+            image="/services/polysomnography.webp"
             description={
               "Polysomnography is a noninvasive, painless in-lab test that records your brain waves, oxygen level in your blood, heart rate, and breathing during sleep. It also measures eye and leg movements. The test is usually performed at night but may be done during the day for shift workers. Polysomnography monitors your sleep stages and cycles to identify if or when your sleep patterns are disrupted and why. The test can help diagnose sleep disorders such as Obstructive Sleep Apnea, Periodic Limb Movements, and Narcolepsy. It may also be used to determine a treatment plan or adjust existing treatment. The most common side effect is skin irritation from the adhesive used to attach test sensors."
             }

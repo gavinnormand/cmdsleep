@@ -42,10 +42,17 @@ function Directions() {
               </a>{" "}
               to confirm hours before visiting.
             </p>
-            <p className="mt-2">
+            <p className="mt-2 text-center">
               If you have an in lab sleep study you must arrive at{" "}
               <span className="font-bold">8:15 PM</span>
+              <br />
+              <br />
+              <span className="font-bold">Location of Dropbox:</span>
             </p>
+            <img
+              className="my-2 h-64 rounded-md shadow-lg"
+              src="/office/dropbox.jpg"
+            ></img>
           </div>
           <div className="h-full min-h-[400px] w-full overflow-hidden rounded-xl shadow-lg">
             <iframe
