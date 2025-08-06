@@ -13,10 +13,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
       <div className="flex flex-col items-center">
         <Link
           className="w-full py-2 text-center transition-all hover:bg-gray-100 active:bg-gray-100"
-          to={"/sleep-doctors"}
+          to={"/patient-portal"}
           onClick={onClose}
         >
-          Sleep Doctors
+          Patient Portal
         </Link>
         <Link
           className="w-full py-2 text-center transition-all hover:bg-gray-100 active:bg-gray-100"
@@ -34,10 +34,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
         </Link>
         <Link
           className="w-full py-2 text-center transition-all hover:bg-gray-100 active:bg-gray-100"
-          to={"/patient-portal"}
+          to={"/treatments"}
           onClick={onClose}
         >
-          Patient Portal
+          Treatments
         </Link>
         <Link
           className="w-full py-2 text-center transition-all hover:bg-gray-100 active:bg-gray-100"
@@ -45,6 +45,13 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           onClick={onClose}
         >
           Forms
+        </Link>
+        <Link
+          className="w-full py-2 text-center transition-all hover:bg-gray-100 active:bg-gray-100"
+          to={"/sleep-doctors"}
+          onClick={onClose}
+        >
+          Sleep Doctors
         </Link>
         <Link
           className="w-full py-2 text-center transition-all hover:bg-gray-100 active:bg-gray-100"
