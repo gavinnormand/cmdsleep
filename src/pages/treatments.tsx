@@ -37,7 +37,7 @@ function Treatments() {
                   "Contact your provider if you're still snoring or begin snoring again despite treatment",
                   "If your weight changes, the pressure settings of the CPAP machine might need to be adjusted",
                 ]}
-                infoLink={"https://www.sleepfoundation.org/cpap"}
+                infoLinks={["https://www.sleepfoundation.org/cpap"]}
               />
             </div>
             <TreatmentCard
@@ -56,7 +56,7 @@ function Treatments() {
                 "The machine automatically adjusts pressure based on real-time breathing patterns",
                 "Particularly useful for those whose sleep apnea symptoms vary throughout the night",
               ]}
-              infoLink={"https://www.sleepfoundation.org/cpap/apap-machine"}
+              infoLinks={["https://www.sleepfoundation.org/cpap/apap-machine"]}
             />
             <TreatmentCard
               name={"BiPAP"}
@@ -75,9 +75,9 @@ function Treatments() {
                 "Particularly useful for individuals who struggle with exhaling against the pressure of a CPAP machine",
                 "Can be used to support ventilation in various respiratory conditions beyond sleep apnea",
               ]}
-              infoLink={
-                "https://www.sleepfoundation.org/cpap/what-is-a-bipap-machine"
-              }
+              infoLinks={[
+                "https://www.sleepfoundation.org/cpap/what-is-a-bipap-machine",
+              ]}
             />
             <TreatmentCard
               name={"Oral Appliances"}
@@ -98,7 +98,10 @@ function Treatments() {
                 "Requires follow-up with your dentist repeatedly during the first year and then regularly after that to ensure proper fit",
                 "Regular reassessment of symptoms is necessary",
               ]}
-              infoLink={"https://bsleepinc.com/"}
+              infoLinks={[
+                "https://bsleepinc.com/",
+                "https://sleep-apnea-dentist-nj.info/",
+              ]}
             />
             <TreatmentCard
               name={"Weight Loss"}
@@ -120,9 +123,9 @@ function Treatments() {
                 "Aim for gradual and sustainable weight loss of 1-2 pounds per week",
                 "Consult healthcare professionals for personalized weight loss strategies",
               ]}
-              infoLink={
-                "https://www.sleepfoundation.org/physical-health/weight-loss-and-sleep"
-              }
+              infoLinks={[
+                "https://www.sleepfoundation.org/physical-health/weight-loss-and-sleep",
+              ]}
             />
             <TreatmentCard
               name={"Inspire"}
@@ -146,9 +149,9 @@ function Treatments() {
                 "Many patients experience significant reduction in snoring",
                 "FDA-approved alternative to CPAP therapy",
               ]}
-              infoLink={
-                "https://www.sleepfoundation.org/sleep-apnea/what-is-inspire-sleep-apnea-treatment"
-              }
+              infoLinks={[
+                "https://www.sleepfoundation.org/sleep-apnea/what-is-inspire-sleep-apnea-treatment",
+              ]}
             />
             <TreatmentCard
               name={"Surgery for OSA"}
@@ -172,9 +175,9 @@ function Treatments() {
                 "Weight-loss (bariatric) surgery may help by reducing overall airway obstruction",
                 "More research needed on effectiveness of soft palate implants",
               ]}
-              infoLink={
-                "https://www.sleepfoundation.org/sleep-apnea/surgery-for-sleep-apnea"
-              }
+              infoLinks={[
+                "https://www.sleepfoundation.org/sleep-apnea/surgery-for-sleep-apnea",
+              ]}
             />
             <TreatmentCard
               name={"Lifestyle and Home Remedies"}
@@ -201,9 +204,9 @@ function Treatments() {
                 "Quitting smoking is important for overall airway health",
                 "Humidifiers may reduce airway dryness but studies haven't shown direct impact on sleep apnea events",
               ]}
-              infoLink={
-                "https://www.sleepfoundation.org/sleep-apnea/home-remedies-for-sleep-apnea"
-              }
+              infoLinks={[
+                "https://www.sleepfoundation.org/sleep-apnea/home-remedies-for-sleep-apnea",
+              ]}
             />
           </div>
         </div>

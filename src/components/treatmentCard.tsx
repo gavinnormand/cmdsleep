@@ -1,5 +1,6 @@
-import { ChevronRight, LinkIcon } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { useState } from "react";
+import LinkCard from "./linkCard";
 
 interface TreatmentCardProps {
   name: string;
@@ -7,7 +8,7 @@ interface TreatmentCardProps {
   description: string;
   recommendations: string[];
   notes?: string[];
-  infoLink: string;
+  infoLinks: string[];
 }
 
 const TreatmentCard: React.FC<TreatmentCardProps> = ({
@@ -16,7 +17,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
   description,
   recommendations,
   notes,
-  infoLink,
+  infoLinks,
 }) => {
   const [showRecommendations, setShowRecommendations] = useState(false);
 
@@ -94,15 +95,11 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
           ))}
         </div>
       )}
-      <a
-        href={infoLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="border-primary text-primary hover:bg-primary active:bg-primary mx-auto mt-8 flex w-2/3 cursor-pointer flex-row items-center justify-center gap-x-2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
-      >
-        {" "}
-        More Info <LinkIcon className="inline h-5.5 w-5.5" />
-      </a>
+      <div className="my-4 flex flex-row flex-wrap items-center justify-center gap-x-12 gap-y-8">
+        {infoLinks.map((link) => (
+          <LinkCard text="More Info" link={link} />
+        ))}
+      </div>
     </div>
   );
 };

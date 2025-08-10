@@ -1,3 +1,5 @@
+import LinkCard from "./linkCard";
+
 interface SleepDisorderCardProps {
   name: string;
   tag?: string;
@@ -27,15 +29,9 @@ const SleepDisorderCard: React.FC<SleepDisorderCardProps> = ({
           ))}
         </div>
       </div>
-      <a
-        href={infoLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="border-primary0 text-primary hover:bg-primary active:bg-primary mt-8 w-full rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
-      >
-        {" "}
-        More Info
-      </a>
+      <div className="mx-auto mt-6">
+        <LinkCard text="More Info" link={infoLink} />
+      </div>
     </div>
   );
 };

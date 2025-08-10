@@ -4,7 +4,7 @@ function PatientPortal() {
   return (
     <div>
       <PageTitle text={"Patient Portal"} />
-      <div className="py-8 text-center">
+      <div className="py-8 px-4 text-center">
         <p className="mx-8 text-xl font-semibold">
           The Patient Portal provides an easy and secure way for our patients to
           stay informed and engaged with their care!

@@ -1,5 +1,6 @@
 import PageTitle from "../components/pageTitle";
 import ServiceCard from "../components/serviceCard";
+import Title from "../components/title";
 
 const inLabFAQS = [
   {
@@ -90,41 +91,43 @@ function Services() {
     <div>
       <PageTitle text={"Services"} />
       <div className="flex flex-col items-center gap-8 p-8 md:px-12">
-        <div className="item-center flex w-11/12 flex-col gap-2 text-center text-lg md:w-3/4">
-          <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">Diagnosis</h1>
-          <p>
-            Your health care provider may make an evaluation based on your
-            symptoms and a sleep history. However you might need further
-            evaluation via a sleep study to assist the doctor in the diagnosis
-            and treatment of sleep disorders.
-          </p>
-          <p>
-            An evaluation often involves overnight monitoring of your breathing
-            and other body functions during sleep testing either at home or at a
-            sleep center.
-          </p>
+        <div className="flex flex-col items-center">
+          <Title text={"Diagnosis"} />
+          <div className="item-center flex w-11/12 flex-col gap-2 text-center text-lg md:w-3/4">
+            <p>
+              Your health care provider may make an evaluation based on your
+              symptoms and a sleep history. However you might need further
+              evaluation via a sleep study to assist the doctor in the diagnosis
+              and treatment of sleep disorders.
+            </p>
+            <p>
+              An evaluation often involves overnight monitoring of your
+              breathing and other body functions during sleep testing either at
+              home or at a sleep center.
+            </p>
 
-          <span className="font-semibold">
-            Tests to detect sleep apnea include:
-          </span>
-          <p>
-            {"- "}
-            <span className="font-semibold">Home sleep tests:</span> Measuring
-            your heart rate, blood oxygen level, airflow, and breathing patterns
-            with provided at home equipment.
-          </p>
-          <p>
-            {"- "}
             <span className="font-semibold">
-              Nocturnal polysomnography:
-            </span>{" "}
-            Hooking up to equipment in the lab that monitors your heart, lung
-            and brain activity, breathing patterns, arm and leg movements, and
-            blood oxygen levels while you sleep.
-          </p>
+              Tests to detect sleep apnea include:
+            </span>
+            <p>
+              {"- "}
+              <span className="font-semibold">Home sleep tests:</span> Measuring
+              your heart rate, blood oxygen level, airflow, and breathing
+              patterns with provided at home equipment.
+            </p>
+            <p>
+              {"- "}
+              <span className="font-semibold">
+                Nocturnal polysomnography:
+              </span>{" "}
+              Hooking up to equipment in the lab that monitors your heart, lung
+              and brain activity, breathing patterns, arm and leg movements, and
+              blood oxygen levels while you sleep.
+            </p>
+          </div>
         </div>
-        <div id="Home-Sleep-Test" className="flex flex-col gap-2">
-          <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">At Home</h1>
+        <div id="Home-Sleep-Test" className="flex flex-col">
+          <Title text={"At Home"} />
           <ServiceCard
             name={"Home Sleep Test"}
             image="/services/ares.jpg"
@@ -248,163 +251,167 @@ function Services() {
                   "Most tests consist of 3 consecutive nights, with the device returned on the 4th morning. Some insurance plans may cover only 1 night.",
               },
             ]}
-            infoLink={
-              "https://www.watermarkmedical.com/healthcare-professionals/ares-tm-620"
-            }
+            infoLinks={[
+              "https://www.watermarkmedical.com/healthcare-professionals/ares-tm-620",
+              "https://sleepeducation.org/patients/home-sleep-apnea-test/",
+            ]}
           />
         </div>
-        <div id="In-Lab-Sleep-Study" className="flex flex-col gap-2">
-          <h1 className="mx-auto w-fit border-b-2 p-2 text-4xl">In Lab</h1>
-          <ServiceCard
-            name={"Polysomnogram"}
-            image="/services/polysomnography.webp"
-            description={
-              "Polysomnography is a noninvasive, painless in-lab test that records your brain waves, oxygen level in your blood, heart rate, and breathing during sleep. It also measures eye and leg movements. The test is usually performed at night but may be done during the day for shift workers. Polysomnography monitors your sleep stages and cycles to identify if or when your sleep patterns are disrupted and why. The test can help diagnose sleep disorders such as Obstructive Sleep Apnea, Periodic Limb Movements, and Narcolepsy. It may also be used to determine a treatment plan or adjust existing treatment. The most common side effect is skin irritation from the adhesive used to attach test sensors."
-            }
-            instructions={{
-              before: [
-                "Don't consume alcohol or caffeine during the afternoon and evening before the study",
-                "Don't take afternoon naps",
-                "Bathe or shower before your sleep study",
-                "Don't put on lotions, gels, colognes or makeup before the test",
-                "Arrive at the Sleep Center ON TIME at 8:15 PM",
-                "Bring: Insurance cards, driver's license (photo ID), any paperwork sent to you",
-                "Bring: Bedtime clothes and change of clothes for next day (no silk PJs)",
-                "Bring: All medications as prescribed (Sleep Center cannot provide medications)",
-                "Bring: Book/magazine for reading, favorite pillow/blanket (optional), toiletries",
-              ],
-              during: [
-                "Change into nightclothes and fill out bedtime questionnaire upon arrival",
-                "Technologist will mark and measure your head for EEG electrode placement (45-60 minute setup)",
-                "Study typically starts between 10-11:00 pm",
-                "Sleep as you normally would at home",
-                "You can use the restroom freely (monitoring devices disconnect easily)",
-                "Sleep in any position, but try to spend some time on your back",
-                "CPAP may be applied during the night if necessary",
-                "Technologists monitor you throughout, and speak through monitoring equipment if you need help",
-                "Study ends between 5:00-6:00 am",
-                "Sensor removal takes 15-20 minutes",
-                "You can wash up at the center before leaving",
-              ],
-              after: [
-                "Return to usual activities after the study",
-                "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
-                "Report finalization generally takes about 10-15 business days",
-                "You may be asked to schedule a follow-up appointment to review results with the sleep doctor",
-              ],
-            }}
-            faqs={inLabFAQS}
-            checklistLink="/services/inLabChecklist.pdf"
-            infoLink={"https://www.sleepfoundation.org/sleep-studies"}
-          />
+        <div id="In-Lab-Sleep-Study">
+          <Title text={"In Lab"} />
+          <div className="flex flex-col gap-8">
+            <ServiceCard
+              name={"Polysomnogram"}
+              image="/services/polysomnography.webp"
+              description={
+                "Polysomnography is a noninvasive, painless in-lab test that records your brain waves, oxygen level in your blood, heart rate, and breathing during sleep. It also measures eye and leg movements. The test is usually performed at night but may be done during the day for shift workers. Polysomnography monitors your sleep stages and cycles to identify if or when your sleep patterns are disrupted and why. The test can help diagnose sleep disorders such as Obstructive Sleep Apnea, Periodic Limb Movements, and Narcolepsy. It may also be used to determine a treatment plan or adjust existing treatment. The most common side effect is skin irritation from the adhesive used to attach test sensors."
+              }
+              instructions={{
+                before: [
+                  "Don't consume alcohol or caffeine during the afternoon and evening before the study",
+                  "Don't take afternoon naps",
+                  "Bathe or shower before your sleep study",
+                  "Don't put on lotions, gels, colognes or makeup before the test",
+                  "Arrive at the Sleep Center ON TIME at 8:15 PM",
+                  "Bring: Insurance cards, driver's license (photo ID), any paperwork sent to you",
+                  "Bring: Bedtime clothes and change of clothes for next day (no silk PJs)",
+                  "Bring: All medications as prescribed (Sleep Center cannot provide medications)",
+                  "Bring: Book/magazine for reading, favorite pillow/blanket (optional), toiletries",
+                ],
+                during: [
+                  "Change into nightclothes and fill out bedtime questionnaire upon arrival",
+                  "Technologist will mark and measure your head for EEG electrode placement (45-60 minute setup)",
+                  "Study typically starts between 10-11:00 pm",
+                  "Sleep as you normally would at home",
+                  "You can use the restroom freely (monitoring devices disconnect easily)",
+                  "Sleep in any position, but try to spend some time on your back",
+                  "CPAP may be applied during the night if necessary",
+                  "Technologists monitor you throughout, and speak through monitoring equipment if you need help",
+                  "Study ends between 5:00-6:00 am",
+                  "Sensor removal takes 15-20 minutes",
+                  "You can wash up at the center before leaving",
+                ],
+                after: [
+                  "Return to usual activities after the study",
+                  "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
+                  "Report finalization generally takes about 10-15 business days",
+                  "You may be asked to schedule a follow-up appointment to review results with the sleep doctor",
+                ],
+              }}
+              faqs={inLabFAQS}
+              checklistLink="/services/inLabChecklist.pdf"
+              infoLinks={["https://www.sleepfoundation.org/sleep-studies"]}
+            />
+
+            <ServiceCard
+              name={"CPAP/BiPAP Titration"}
+              image="/services/cpap.avif"
+              description={
+                "A CPAP sleep study, also known as a CPAP titration study, is a type of sleep study used to determine the correct air pressure setting for a CPAP machine, which is used to treat sleep-related breathing disorders like sleep apnea. This study helps doctors find the optimal pressure needed to keep your airway open during sleep, ensuring effective treatment for your sleep apnea. The study involves connecting you to a CPAP machine while you spend the night at a sleep facility. If CPAP proves insufficient, a BiPAP machine may be used, which delivers two different pressure levels: higher during inhalation and lower during exhalation."
+              }
+              instructions={{
+                before: [
+                  "Don't consume alcohol or caffeine during the afternoon and evening before the study",
+                  "Don't take afternoon naps",
+                  "Bathe or shower before your sleep study",
+                  "Don't put on lotions, gels, colognes or makeup before the test",
+                  "Arrive at the Sleep Center ON TIME at 8:15 PM",
+                  "Bring: Insurance cards, driver's license (photo ID), any paperwork sent to you",
+                  "Bring: Bedtime clothes and change of clothes for next day (no silk PJs)",
+                  "Bring: All medications as prescribed (Sleep Center cannot provide medications)",
+                  "Bring: Book/magazine for reading, favorite pillow/blanket (optional), toiletries",
+                ],
+                during: [
+                  "Study typically starts between 10-11:00 pm",
+                  "Sleep as you normally would at home",
+                  "You can use the restroom freely (monitoring devices disconnect easily)",
+                  "Sleep in any position, but try to spend some time on your back (unless medically contraindicated)",
+                  "You'll be connected to a CPAP machine using a tube and mask",
+                  "Technologist may swap masks throughout the night to find the best fit",
+                  "Air pressure starts low and increases in small increments",
+                  "Humidity may be added if you have trouble sleeping",
+                  "BiPAP machine may be used if CPAP is insufficient or not tolerated",
+                  "Technologists monitor you throughout - speak through monitoring equipment if you need help",
+                  "Study ends between 5-6:00 am",
+                  "Sensor removal takes 15-20 minutes",
+                  "You can wash up at the center before leaving",
+                ],
+                after: [
+                  "Return to usual activities after the study",
+                  "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
+                  "Report finalization generally takes about 10-15 business days",
+                ],
+              }}
+              faqs={inLabFAQS}
+              checklistLink="/services/inLabChecklist.pdf"
+              infoLinks={["https://www.sleepfoundation.org/sleep-studies"]}
+            />
+            <ServiceCard
+              name={"Split Night Sleep Study"}
+              image="/services/splitNight.webp"
+              description={
+                "A split-night study includes both diagnostics Polysomnogram with a CPAP titration on the same night, primarily for individuals suspected of having severe obstructive sleep apnea. This approach allows for both diagnosis and treatment initiation within a single overnight session. The first part of the study is a standard polysomnogram to monitor your breathing for signs of Obstructive Sleep Apnea, periods where you actually stop or have difficulty breathing. If significant Obstructive Sleep Apnea is detected during the diagnostic phase, the study transitions to CPAP titration in the second part. While efficient, there can be challenges with adapting to CPAP during the same night, and some patients may require an additional night of study to acquire the optimal pressure setting."
+              }
+              instructions={{
+                before: [
+                  "Follow standard Polysomnogram preparation instructions",
+                  "Follow standard CPAP titration preparation instructions",
+                  "Arrive at the Sleep Center ON TIME at 8:15 PM",
+                ],
+                during: [
+                  "First part: Standard Polysomnogram monitoring for breathing patterns and OSA signs",
+                  "If significant OSA is detected, study transitions to CPAP titration",
+                  "Second part: CPAP application and pressure adjustment",
+                  "Be aware that adapting to CPAP during the same night can be challenging",
+                  "Some patients may need more time to adjust",
+                ],
+                after: [
+                  "You may need to return for an additional night of study if optimal pressure setting wasn't achieved",
+                  "Return to usual activities after the study",
+                  "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
+                  "Report finalization generally takes about 10-15 business days",
+                ],
+              }}
+              faqs={inLabFAQS}
+              checklistLink="/services/inLabChecklist.pdf"
+              infoLinks={["https://www.sleepfoundation.org/sleep-studies"]}
+            />
+            <ServiceCard
+              name={"MSLT/MWT"}
+              image="/services/mslt-mwt.webp"
+              description={
+                'The Multiple Sleep Latency Test (MSLT) is a standardized test to rule out Narcolepsy and/or Idiopathic Hypersomnolence (Excessive Daytime Sleepiness), where each nap is an "opportunity" for you to sleep and monitors your tendency to sleep when given the opportunity. The Maintenance of Wakefulness Test (MWT) is a standardized test to measure your level of alertness/wakefulness, where you attempt to remain awake while sitting in a darkened room during each 20-minute session. Both tests are performed throughout the day immediately following your Standard PSG Study, with sessions occurring at 2-hour intervals.'
+              }
+              instructions={{
+                before: [
+                  "Must complete a Standard PSG Study the night before",
+                  "No specific additional preparation required",
+                ],
+                during: [
+                  "Some monitoring devices from the sleep study will be removed",
+                  "Change into your daytime clothes",
+                  "First session begins 1.5-2 hours after awakening from sleep study",
+                  "Additional sessions occur at 2-hour intervals",
+                  "For MSLT: Each nap is an opportunity to sleep",
+                  "For MWT: Attempt to remain awake during each 20-minute session in a darkened room",
+                  "For MWT: No self-stimulation allowed (no pinching, singing, reading, etc.)",
+                  "Between sessions: remain awake and out of bed",
+                  "Breakfast and lunch will be provided",
+                  "No caffeinated beverages allowed during the day",
+                  "For MWT: No naps allowed during the day",
+                ],
+                after: [
+                  "Return to usual activities after the study",
+                  "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
+                  "Report finalization generally takes about 10-15 business days",
+                ],
+              }}
+              faqs={inLabFAQS}
+              checklistLink="/services/inLabChecklist.pdf"
+              infoLinks={["https://www.sleepfoundation.org/sleep-studies"]}
+            />
+          </div>
         </div>
-        <ServiceCard
-          name={"CPAP/BiPAP Titration"}
-          image="/services/cpap.avif"
-          description={
-            "A CPAP sleep study, also known as a CPAP titration study, is a type of sleep study used to determine the correct air pressure setting for a CPAP machine, which is used to treat sleep-related breathing disorders like sleep apnea. This study helps doctors find the optimal pressure needed to keep your airway open during sleep, ensuring effective treatment for your sleep apnea. The study involves connecting you to a CPAP machine while you spend the night at a sleep facility. If CPAP proves insufficient, a BiPAP machine may be used, which delivers two different pressure levels: higher during inhalation and lower during exhalation."
-          }
-          instructions={{
-            before: [
-              "Don't consume alcohol or caffeine during the afternoon and evening before the study",
-              "Don't take afternoon naps",
-              "Bathe or shower before your sleep study",
-              "Don't put on lotions, gels, colognes or makeup before the test",
-              "Arrive at the Sleep Center ON TIME at 8:15 PM",
-              "Bring: Insurance cards, driver's license (photo ID), any paperwork sent to you",
-              "Bring: Bedtime clothes and change of clothes for next day (no silk PJs)",
-              "Bring: All medications as prescribed (Sleep Center cannot provide medications)",
-              "Bring: Book/magazine for reading, favorite pillow/blanket (optional), toiletries",
-            ],
-            during: [
-              "Study typically starts between 10-11:00 pm",
-              "Sleep as you normally would at home",
-              "You can use the restroom freely (monitoring devices disconnect easily)",
-              "Sleep in any position, but try to spend some time on your back (unless medically contraindicated)",
-              "You'll be connected to a CPAP machine using a tube and mask",
-              "Technologist may swap masks throughout the night to find the best fit",
-              "Air pressure starts low and increases in small increments",
-              "Humidity may be added if you have trouble sleeping",
-              "BiPAP machine may be used if CPAP is insufficient or not tolerated",
-              "Technologists monitor you throughout - speak through monitoring equipment if you need help",
-              "Study ends between 5-6:00 am",
-              "Sensor removal takes 15-20 minutes",
-              "You can wash up at the center before leaving",
-            ],
-            after: [
-              "Return to usual activities after the study",
-              "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
-              "Report finalization generally takes about 10-15 business days",
-            ],
-          }}
-          faqs={inLabFAQS}
-          checklistLink="/services/inLabChecklist.pdf"
-          infoLink={"https://www.sleepfoundation.org/sleep-studies"}
-        />
-        <ServiceCard
-          name={"Split Night Sleep Study"}
-          image="/services/splitNight.webp"
-          description={
-            "A split-night study includes both diagnostics Polysomnogram with a CPAP titration on the same night, primarily for individuals suspected of having severe obstructive sleep apnea. This approach allows for both diagnosis and treatment initiation within a single overnight session. The first part of the study is a standard polysomnogram to monitor your breathing for signs of Obstructive Sleep Apnea, periods where you actually stop or have difficulty breathing. If significant Obstructive Sleep Apnea is detected during the diagnostic phase, the study transitions to CPAP titration in the second part. While efficient, there can be challenges with adapting to CPAP during the same night, and some patients may require an additional night of study to acquire the optimal pressure setting."
-          }
-          instructions={{
-            before: [
-              "Follow standard Polysomnogram preparation instructions",
-              "Follow standard CPAP titration preparation instructions",
-              "Arrive at the Sleep Center ON TIME at 8:15 PM",
-            ],
-            during: [
-              "First part: Standard Polysomnogram monitoring for breathing patterns and OSA signs",
-              "If significant OSA is detected, study transitions to CPAP titration",
-              "Second part: CPAP application and pressure adjustment",
-              "Be aware that adapting to CPAP during the same night can be challenging",
-              "Some patients may need more time to adjust",
-            ],
-            after: [
-              "You may need to return for an additional night of study if optimal pressure setting wasn't achieved",
-              "Return to usual activities after the study",
-              "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
-              "Report finalization generally takes about 10-15 business days",
-            ],
-          }}
-          faqs={inLabFAQS}
-          checklistLink="/services/inLabChecklist.pdf"
-          infoLink={"https://www.sleepfoundation.org/sleep-studies"}
-        />
-        <ServiceCard
-          name={"MSLT/MWT"}
-          image="/services/mslt-mwt.webp"
-          description={
-            'The Multiple Sleep Latency Test (MSLT) is a standardized test to rule out Narcolepsy and/or Idiopathic Hypersomnolence (Excessive Daytime Sleepiness), where each nap is an "opportunity" for you to sleep and monitors your tendency to sleep when given the opportunity. The Maintenance of Wakefulness Test (MWT) is a standardized test to measure your level of alertness/wakefulness, where you attempt to remain awake while sitting in a darkened room during each 20-minute session. Both tests are performed throughout the day immediately following your Standard PSG Study, with sessions occurring at 2-hour intervals.'
-          }
-          instructions={{
-            before: [
-              "Must complete a Standard PSG Study the night before",
-              "No specific additional preparation required",
-            ],
-            during: [
-              "Some monitoring devices from the sleep study will be removed",
-              "Change into your daytime clothes",
-              "First session begins 1.5-2 hours after awakening from sleep study",
-              "Additional sessions occur at 2-hour intervals",
-              "For MSLT: Each nap is an opportunity to sleep",
-              "For MWT: Attempt to remain awake during each 20-minute session in a darkened room",
-              "For MWT: No self-stimulation allowed (no pinching, singing, reading, etc.)",
-              "Between sessions: remain awake and out of bed",
-              "Breakfast and lunch will be provided",
-              "No caffeinated beverages allowed during the day",
-              "For MWT: No naps allowed during the day",
-            ],
-            after: [
-              "Return to usual activities after the study",
-              "Either our office or your referring doctor's office (or both) will contact you after report is finalized",
-              "Report finalization generally takes about 10-15 business days",
-            ],
-          }}
-          faqs={inLabFAQS}
-          checklistLink="/services/inLabChecklist.pdf"
-          infoLink={"https://www.sleepfoundation.org/sleep-studies"}
-        />
       </div>
     </div>
   );

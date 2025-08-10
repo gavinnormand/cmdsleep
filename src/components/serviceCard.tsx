@@ -1,5 +1,6 @@
-import { ChevronRight, ClipboardList, LinkIcon } from "lucide-react";
+import { ChevronRight, ClipboardList } from "lucide-react";
 import { useState } from "react";
+import LinkCard from "./linkCard";
 
 interface faq {
   question: string;
@@ -17,7 +18,7 @@ interface ServiceCardProps {
   };
   faqs: faq[];
   checklistLink?: string;
-  infoLink: string;
+  infoLinks: string[];
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -27,7 +28,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   instructions,
   checklistLink,
   faqs,
-  infoLink,
+  infoLinks,
 }) => {
   const [showInstructions, setShowInstructions] = useState(false);
 
@@ -120,27 +121,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           ))}
         </div>
       )}
-      <div className="flex flex-row flex-wrap justify-center gap-x-12 px-0">
+      <div className="my-4 flex flex-row flex-wrap items-center justify-center gap-x-12 gap-y-8">
         {checklistLink && (
           <a
             href={checklistLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="border-primary text-primary hover:bg-primary active:bg-primary mt-8 flex w-1/3 min-w-72 flex-row items-center justify-center gap-x-2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
+            className="border-primary text-primary hover:bg-primary active:bg-primary flex w-80 flex-row items-center justify-center gap-x-2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
           >
             {" "}
             Checklist <ClipboardList className="inline h-5.5 w-5.5" />
           </a>
         )}
-        <a
-          href={infoLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-primary text-primary hover:bg-primary active:bg-primary mt-8 flex w-1/3 min-w-72 flex-row items-center justify-center gap-x-2 rounded-md border-2 p-3 text-center align-baseline font-semibold transition-all hover:text-white active:text-white"
-        >
-          {" "}
-          More Info <LinkIcon className="inline h-5.5 w-5.5" />
-        </a>
+        {infoLinks.map((link) => (
+          <LinkCard text="More Info" link={link} />
+        ))}
       </div>
     </div>
   );

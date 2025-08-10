@@ -1,6 +1,21 @@
 import FormSection from "../components/formSection";
 import PageTitle from "../components/pageTitle";
 
+const instructionsForms = [
+  {
+    name: "Home Sleep Test Instructions",
+    link: "/forms/instructions/instructions-home-sleep-study.pdf",
+  },
+  {
+    name: "In-Lab Sleep Study Instructions",
+    link: "/forms/instructions/instructions-in-lab.pdf",
+  },
+  {
+    name: "What do I do after the Sleep Study?",
+    link: "/forms/instructions/what-do-i-do-after-the-sleep-study.pdf",
+  },
+];
+
 const homeSleepTestForms = [
   {
     name: "Adults Home Sleep Test Forms and Questionnaires",
@@ -99,6 +114,7 @@ function Forms() {
     <div>
       <PageTitle text={"Forms"} />
       <div className="flex flex-col items-center justify-center gap-y-4 p-8">
+        <FormSection title={"Instructions"} forms={instructionsForms} />
         <FormSection
           title={"Home Sleep Test Forms"}
           forms={homeSleepTestForms}
