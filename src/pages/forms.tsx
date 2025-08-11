@@ -14,6 +14,10 @@ const instructionsForms = [
     name: "What do I do after the Sleep Study?",
     link: "/forms/instructions/what-do-i-do-after-the-sleep-study.pdf",
   },
+  {
+    name: "Patient Portal Instructions",
+    link: "/forms/instructions/patient-portal-instructions.pdf",
+  },
 ];
 
 const homeSleepTestForms = [
