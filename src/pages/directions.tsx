@@ -47,7 +47,7 @@ function Directions() {
               </p>
               <p className="text-center">
                 If you have an in lab sleep study you must arrive at{" "}
-                <span className="font-bold">8:15 PM</span>
+                <span className="font-bold">8:15 PM.</span>
               </p>
             </div>
             <div className="flex flex-col items-center">
