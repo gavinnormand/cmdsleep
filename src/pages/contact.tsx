@@ -24,7 +24,7 @@ function Contact() {
             >
               here
             </a>
-            to complete our online patient intake form
+            to complete our online patient contact form
           </p>
           <p>
             <FaPhoneAlt className="mr-2 mb-1 inline" />

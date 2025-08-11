@@ -16,12 +16,16 @@ function HatimYoussef() {
         "Pulmonary Disease",
         "Internal Medicine",
       ]}
-      moreInfoLink={"http://www.getresst.com/index.html/"}
+      moreInfoLink={"http://www.getresst.com/index.html"}
       phone="(732) 737-7801"
       addresses={[
         {
           name: "3546 State Route 27 Kendall Park, NJ 08824",
           link: "https://maps.app.goo.gl/UEiP9A5dcv54YotF8",
+        },
+        {
+          name: "5 Plainsboro Rd, Suite 360, Plainsboro, NJ 08536",
+          link: "https://maps.app.goo.gl/ki37XF5vyHB7yf5T6",
         },
       ]}
     />

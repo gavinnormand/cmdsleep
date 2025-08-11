@@ -15,7 +15,7 @@ function JasmeetBajaj() {
         "Internal Medicine",
         "Critical Care Medicine",
       ]}
-      moreInfoLink={"http://www.getresst.com/index.html/"}
+      moreInfoLink={"http://www.getresst.com/index.html"}
       phone="(732) 737-7801"
       addresses={[
         {
@@ -23,8 +23,8 @@ function JasmeetBajaj() {
           link: "https://maps.app.goo.gl/UEiP9A5dcv54YotF8",
         },
         {
-          name: "731 Alexander Rd, Suite 202 Princeton, NJ 08540",
-          link: "https://maps.app.goo.gl/HFHcoH2sT1tw93gVA",
+          name: "5 Plainsboro Rd, Suite 360, Plainsboro, NJ 08536",
+          link: "https://maps.app.goo.gl/ki37XF5vyHB7yf5T6",
         },
       ]}
     />

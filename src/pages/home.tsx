@@ -3,7 +3,6 @@ import HomeCard from "../components/homeCard";
 
 const officeImages = [
   "/office/frontWithCouch.jpg",
-  "/office/bigBed.jpg",
   "/office/couchRoom.jpg",
   "/office/smallBed.jpg",
   "/office/couch.jpg",
@@ -58,7 +57,6 @@ function Home() {
         <h1>Aetna Preferred Provider</h1>
         <h1>MOST INSURANCES ACCEPTED</h1>
         <h1>Home Sleep Study Appointment available immediately!</h1>
-        <h1>Lab is accredited with American Academy of Sleep Medicine</h1>
       </div>
     </div>
   );

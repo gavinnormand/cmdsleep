@@ -108,9 +108,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
       </button>
       {showFAQs && (
-        <div className="ml-2 flex flex-col items-start gap-y-2 text-left">
+        <div className="ml-2 flex flex-col items-start gap-y-6 text-left">
           {faqs.map((faq) => (
-            <div className="flex flex-col items-start text-lg">
+            <div className="flex flex-col gap-y-1 items-start text-lg">
               <p>
                 <span className="font-semibold">{"Q: "}</span> {faq.question}
               </p>
