@@ -70,24 +70,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               showInstructions ? "rotate-90" : "rotate-0"
             }`}
           />
-          <h1 className="text-left text-lg font-semibold">Instructions</h1>
+          <h1 className="text-left text-xl font-semibold">Instructions</h1>
         </div>
       </button>
       {showInstructions && (
         <div className="ml-2 flex flex-col items-start gap-2">
-          <p className="text-lg font-semibold">Before your study:</p>
+          <p className="text-xl font-semibold">Before your study:</p>
           {instructions.before.map((instruction, index) => (
             <p key={index} className="text-lg">
               <span className="font-semibold">{index + 1}.</span> {instruction}
             </p>
           ))}
-          <p className="mt-2 text-lg font-semibold">During your study:</p>
+          <p className="mt-2 text-xl font-semibold">During your study:</p>
           {instructions.during.map((instruction, index) => (
             <p key={index} className="text-lg">
               <span className="font-semibold">{index + 1}.</span> {instruction}
             </p>
           ))}
-          <p className="mt-2 text-lg font-semibold">After your study:</p>
+          <p className="mt-2 text-xl font-semibold">After your study:</p>
           {instructions.after.map((instruction, index) => (
             <p key={index} className="text-lg">
               <span className="font-semibold">{index + 1}.</span> {instruction}
@@ -102,19 +102,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               showFAQs ? "rotate-90" : "rotate-0"
             }`}
           />
-          <h1 className="text-left text-lg font-semibold">
+          <h1 className="text-left text-xl font-semibold">
             Frequently Asked Questions
           </h1>
         </div>
       </button>
       {showFAQs && (
-        <div className="ml-2 flex flex-col items-start gap-y-6 text-left">
+        <div className="ml-2 flex flex-col items-start gap-y-2 text-left">
           {faqs.map((faq) => (
-            <div className="flex flex-col gap-y-1 items-start text-lg">
-              <p>
-                <span className="font-semibold">{"Q: "}</span> {faq.question}
+            <div className="flex flex-col items-start">
+              <p className="font-semibold text-xl">
+                {"Q: "} {faq.question}
               </p>
-              <p>
+              <p className="text-lg pl-6">
                 <span className="font-semibold">{"A: "}</span> {faq.answer}
               </p>
             </div>
