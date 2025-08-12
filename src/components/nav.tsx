@@ -8,9 +8,9 @@ function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white">
-      <p className="text-center">
+      <p className="text-center italic">
         In business since 2009 ~ Licensed by the State of New Jersey and
-        Accreditate with AASM
+        Accredited with AASM
       </p>
       {/* Desktop nav bar */}
       <div className="hidden items-center justify-between px-8 py-4 xl:flex">
