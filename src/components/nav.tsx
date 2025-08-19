@@ -8,7 +8,7 @@ function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white">
-      <p className="text-center italic">
+      <p className="text-center italic px-6">
         In business since 2009 ~ Licensed by the State of New Jersey and
         Accredited with AASM
       </p>

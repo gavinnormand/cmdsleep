@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 interface FAQProps {
@@ -18,16 +18,16 @@ const FAQ: React.FC<FAQProps> = ({ faq }) => {
     <div className="flex flex-col items-start">
       <button
         onClick={toggleAnswer}
-        className="flex cursor-pointer flex-row items-center"
+        className="flex cursor-pointer flex-row items-start text-left"
       >
         <ChevronRight
-          className={`inline transition-transform duration-300 ${
+          className={`mt-0.5 min-w-6 min-h-6 inline transition-transform duration-300 ${
             showAnswer ? "rotate-90" : "rotate-0"
           }`}
         />
-        <p className="text-xl font-semibold">
+        <span className="text-xl font-semibold">
           {"Q: "} {faq.question}
-        </p>
+        </span>
       </button>
       {showAnswer && (
         <p className="pl-6 text-lg">
