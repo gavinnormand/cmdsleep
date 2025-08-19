@@ -24,9 +24,9 @@ function Home() {
       </div>
       <p className="p-8 text-center text-xl">
         As an Independent Sleep Facility in your neighborhood, we offer both
-        unattended home sleep study and attended in-lab sleep studies at our
-        office in East Windsor, NJ. The lab offers State of the Art diagnostics
-        through its Sensormedics Equipment. This also offer patient a more
+        unattended home sleep tests and attended in-lab sleep studies at our
+        office in East Windsor, NJ. The lab offers state of the art diagnostics
+        through its Sensormedics Equipment. This also offers patients a more
         affordable option for sleep disorders outside of the traditional
         hospital owned and operated facilities. A sound night of sleep may just
         be one phone call away.
