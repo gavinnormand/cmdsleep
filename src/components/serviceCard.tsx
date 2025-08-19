@@ -1,6 +1,7 @@
 import { ChevronRight, ClipboardList } from "lucide-react";
 import { useState } from "react";
 import LinkCard from "./linkCard";
+import FAQ from "./faq";
 
 interface faq {
   question: string;
@@ -63,7 +64,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           ))}
         </p>
       </div>
-      <button onClick={toggleInstructions} className="w-fit">
+      <button onClick={toggleInstructions} className="w-fit cursor-pointer">
         <div className="inline-flex items-center">
           <ChevronRight
             className={`inline transition-transform duration-300 ${
@@ -95,7 +96,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           ))}
         </div>
       )}
-      <button onClick={toggleFAQs} className="w-fit">
+      <button onClick={toggleFAQs} className="w-fit cursor-pointer">
         <div className="mt-2 inline-flex items-center">
           <ChevronRight
             className={`inline transition-transform duration-300 ${
@@ -110,14 +111,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       {showFAQs && (
         <div className="ml-2 flex flex-col items-start gap-y-2 text-left">
           {faqs.map((faq) => (
-            <div className="flex flex-col items-start">
-              <p className="font-semibold text-xl">
-                {"Q: "} {faq.question}
-              </p>
-              <p className="text-lg pl-6">
-                <span className="font-semibold">{"A: "}</span> {faq.answer}
-              </p>
-            </div>
+            <FAQ faq={faq} />
           ))}
         </div>
       )}
