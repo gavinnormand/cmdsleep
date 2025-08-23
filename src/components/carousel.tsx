@@ -31,7 +31,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       >
         {images.map((image, index) => (
           <div key={index} className="w-full flex-shrink-0">
-            <img src={image} className="h-auto w-full object-contain" />
+            <img src={image} className="aspect-8/3 h-auto w-full object-cover" />
           </div>
         ))}
       </div>

@@ -11,14 +11,14 @@ const officeImages = [
   "/office/frontWithDoor.jpg",
   "/office/plaque.jpg",
 
-  /*"/office/w_bedroom.jpg",
+  "/office/w_bedroom.jpg",
   "/office/w_camera.jpg",
   "/office/w_hallway.jpg",
   "/office/w_shower.jpg",
   "/office/w_showerSeat.jpg",
   "/office/w_sink.jpg",
   "/office/w_table.jpg",
-  "/office/w_toilet.jpg",*/
+  "/office/w_toilet.jpg",
 ];
 
 function Home() {
