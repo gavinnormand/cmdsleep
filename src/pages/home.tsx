@@ -10,11 +10,21 @@ const officeImages = [
   "/office/300B.jpg",
   "/office/frontWithDoor.jpg",
   "/office/plaque.jpg",
+
+  /*"/office/w_bedroom.jpg",
+  "/office/w_camera.jpg",
+  "/office/w_hallway.jpg",
+  "/office/w_shower.jpg",
+  "/office/w_showerSeat.jpg",
+  "/office/w_sink.jpg",
+  "/office/w_table.jpg",
+  "/office/w_toilet.jpg",*/
 ];
 
 function Home() {
   return (
     <div>
+      <p className="italic text-center">In business since 2009 ~ Licensed by the State of New Jersey and Accredited with AASM</p>
       <img
         src="/office/frontWithCouch.jpg"
         className="block min-h-80 w-full object-cover object-left lg:hidden"
