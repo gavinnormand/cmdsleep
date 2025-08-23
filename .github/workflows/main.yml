@@ -31,5 +31,5 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H cmdsleep.gavinnormand.com >> ~/.ssh/known_hosts
-          scp -r ./dist/* gavinnormand-cmdsleep@cmdsleep.gavinnormand.com:/home/gavinnormand-cmdsleep/htdocs/cmdsleep.gavinnormand.com
+          ssh-keyscan -H cmdsleep.com >> ~/.ssh/known_hosts
+          scp -r ./dist/* cmdsleep@cmdsleep.com:/home/cmdsleep/htdocs/cmdsleep.com
