@@ -305,7 +305,7 @@ function Services() {
 
             <ServiceCard
               name={"CPAP/BiPAP Titration"}
-              image="/services/cpap.avif"
+              image="/services/cpap.webp"
               description={
                 "A CPAP sleep study, also known as a CPAP titration study, is a type of sleep study used to determine the correct air pressure setting for a CPAP machine, which is used to treat sleep-related breathing disorders like sleep apnea. This study helps doctors find the optimal pressure needed to keep your airway open during sleep, ensuring effective treatment for your sleep apnea. The study involves connecting you to a CPAP machine while you spend the night at a sleep facility. If CPAP proves insufficient, a BiPAP machine may be used, which delivers two different pressure levels: higher during inhalation and lower during exhalation."
               }
