@@ -10,6 +10,7 @@ function ContactForm() {
     const data = {
       name: formData.get("name"),
       email: formData.get("email"),
+      phone: formData.get("phone"),
       message: formData.get("message"),
     };
 
@@ -66,6 +67,16 @@ function ContactForm() {
           required={true}
           name="email"
           type="email"
+        ></input>
+        <label className="my-2">
+          Phone Number<span className="text-red-500">*</span>
+        </label>
+        <input
+          className="mb-3 rounded-md border-2 p-3"
+          placeholder="Phone Number"
+          required={true}
+          name="phone"
+          type="tel"
         ></input>
         <label className="my-2">
           Message<span className="text-red-500">*</span>
