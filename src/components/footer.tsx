@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="flex items-center justify-between border-t-1 border-t-black px-4 py-4 md:px-12">
       <p className="text-gray-500">
-        &copy; 2025{" "}
+        &copy; {new Date().getFullYear()}{" "}
         <span className="hidden md:inline">
           Comprehensive Medical Diagnostics
         </span>{" "}
